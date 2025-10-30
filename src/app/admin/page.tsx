@@ -1,6 +1,5 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import { useRouter } from "next/navigation";
 import CausesList from '@/components/Admin/CausesList';
 import AddCauseForm from '@/components/Admin/AddCauseForm';
 import TabsExample from '@/components/Admin/TabsExample';

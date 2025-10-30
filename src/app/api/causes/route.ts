@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import db from "../../../../lib/db";
 
 // GET all causes
@@ -8,7 +8,7 @@ export async function GET() {
 }
 
 // POST create a new cause
-export async function POST(req:any) {
+export async function POST(req:NextRequest) {
   const body = await req.json();
   const { title, description, category, percentage, raised, goal } = body;
 
@@ -28,7 +28,7 @@ export async function POST(req:any) {
 }
 
 // PUT update a cause
-export async function PUT(req: any) {
+export async function PUT(req: NextRequest) {
   const body = await req.json();
   const { id, title, description, category, percentage, raised, goal } = body;
 
