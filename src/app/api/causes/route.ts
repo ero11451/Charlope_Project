@@ -8,7 +8,7 @@ export async function GET() {
 }
 
 // POST create a new cause
-export async function POST(req: { json: () => any; }) {
+export async function POST(req:any) {
   const body = await req.json();
   const { title, description, category, percentage, raised, goal } = body;
 
@@ -28,7 +28,7 @@ export async function POST(req: { json: () => any; }) {
 }
 
 // PUT update a cause
-export async function PUT(req: { json: () => any; }) {
+export async function PUT(req: any) {
   const body = await req.json();
   const { id, title, description, category, percentage, raised, goal } = body;
 
@@ -48,7 +48,7 @@ export async function PUT(req: { json: () => any; }) {
 }
 
 // DELETE a cause
-export async function DELETE(req: { json: () => any; }) {
+export async function DELETE(req: any) {
   const body = await req.json();
   const { id } = body;
 
