@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import InitializeAOS from "./InitializeAOS";
 
-const AOSWrapper = dynamic(() => import("../../../dev-app/src/helper/AOSWrapper"), {
+const AOSWrapper = dynamic(() => import("./AOSWrapper"), {
   ssr: false,
 });
 

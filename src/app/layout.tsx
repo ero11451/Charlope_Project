@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "react-modal-video/scss/modal-video.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.scss";
-import InitializeAOS from "../../../dev-app/src/helper/InitializeAOS";
+import InitializeAOS from "@/helper/InitializeAOS";
 
 
 // import RouteScrollToTop from "@/helper/RouteScrollToTop";
