@@ -14,16 +14,19 @@ db.prepare(`
     percentage TEXT,
     raised TEXT,
     goal TEXT
-  );
+  )
+`).run();
 
+// Create Contacts table
+db.prepare(`
   CREATE TABLE IF NOT EXISTS Contacts (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  full_name TEXT NOT NULL,
-  email TEXT NOT NULL,
-  phone_number TEXT NOT NULL,
-  message TEXT,
-  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-);
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    full_name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    phone_number TEXT NOT NULL,
+    message TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+  )
 `).run();
 
 export default db;
