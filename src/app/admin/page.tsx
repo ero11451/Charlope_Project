@@ -7,31 +7,9 @@ import TabsExample from '@/components/Admin/TabsExample';
 import MessagesPage from '@/components/Admin/MessagesPage';
 
 export default function Admin() {
-    const router = useRouter();
     const [causes, setCauses] = useState([]);
     const [form, setForm] = useState({ title: "", description: "", category: "", percentage: "", raised: "", goal: "" });
     const [editId, setEditId] = useState(null);
-    const tabs = [
-        {
-            id: "home",
-            title: "Home",
-            content: <p>Welcome to the home tab!</p>,
-        },
-        {
-            id: "about",
-            title: "About",
-            content: <p>This tab tells you about the app.</p>,
-        },
-        {
-            id: "contact",
-            title: "Contact",
-            content: (
-                <p>
-                    Reach us at <strong>contact@example.com</strong>
-                </p>
-            ),
-        },
-    ];
 
     const fetchCauses = async () => {
         const res = await fetch("/api/causes");
@@ -40,10 +18,7 @@ export default function Admin() {
     };
 
     useEffect(() => {
-        const isLoggedIn = localStorage.getItem("token"); // Example: token stored in localStorage
-        if (!isLoggedIn) {
-            router.push("/login"); // Redirect if not authenticated
-        }
+       
         fetchCauses();
     }, []);
 
