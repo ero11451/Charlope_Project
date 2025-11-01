@@ -82,7 +82,7 @@ const DifferenceOne = () => {
                           }}
                         >
                           <div className='difference__single-thumb'>
-                            <i className='icon-education' />
+                            <i className='fas fa-award' />
                           </div>
                           <div className='difference__single-content'>
                             <h5>
@@ -106,7 +106,7 @@ const DifferenceOne = () => {
                           }}
                         >
                           <div className='difference__single-thumb'>
-                            <i className='icon-food' />
+                          <i className='fas fa-award' />
                           </div>
                           <div className='difference__single-content'>
                             <h5>
@@ -130,7 +130,7 @@ const DifferenceOne = () => {
                           }}
                         >
                           <div className='difference__single-thumb'>
-                            <i className='icon-health' />
+                          <i className='fas fa-award' />
                           </div>
                           <div className='difference__single-content'>
                             <h5>
@@ -154,7 +154,7 @@ const DifferenceOne = () => {
                           }}
                         >
                           <div className='difference__single-thumb'>
-                            <i className='icon-education' />
+                          <i className='fas fa-award' />
                           </div>
                           <div className='difference__single-content'>
                             <h5>
@@ -178,7 +178,7 @@ const DifferenceOne = () => {
                           }}
                         >
                           <div className='difference__single-thumb'>
-                            <i className='icon-food' />
+                          <i className='fas fa-award' />
                           </div>
                           <div className='difference__single-content'>
                             <h5>
@@ -202,7 +202,7 @@ const DifferenceOne = () => {
                           }}
                         >
                           <div className='difference__single-thumb'>
-                            <i className='icon-health' />
+                          <i className='fas fa-award' />
                           </div>
                           <div className='difference__single-content'>
                             <h5>

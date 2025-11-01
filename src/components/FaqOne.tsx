@@ -157,7 +157,8 @@ const FaqOne = () => {
                   data-aos-duration={1000}
                   data-aos-delay={100}
                 >
-                  <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/faq/thumb-lg.png' alt='Image_inner' />
+
+                  <Image width={400} height={400} src='https://nextjs.charifund.wowtheme7.com/assets/images/faq/thumb-lg.png' alt='Image_inner' />
                 </div>
                 <div
                   className='thumb-sm'
@@ -165,7 +166,8 @@ const FaqOne = () => {
                   data-aos-duration={1000}
                   data-aos-delay={300}
                 >
-                  <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/faq/thumb-sm.png' alt='Image_inner' />
+
+                  <Image width={400} height={600} src='https://nextjs.charifund.wowtheme7.com/assets/images/faq/thumb-sm.png' alt='Image_inner' />
                 </div>
               </div>
             </div>

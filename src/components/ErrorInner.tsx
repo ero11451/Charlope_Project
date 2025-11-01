@@ -37,7 +37,7 @@ const ErrorInner = () => {
       </div>
       <div className='spade'>
         <Image width={200} height={250}
-          src='assets/images/blog/spade-base.png'
+          src='https://nextjs.charifund.wowtheme7.com/assets/images/blog/spade-base.png'
           alt='Image_inner'
           className='base-img'
         />

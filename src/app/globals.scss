@@ -1,6 +1,18 @@
+:root {
+    --base-color:#ffc107;
+  }
+
 @import "/public/assets/scss/main.scss";
 @import "/public/assets/scss/extra.scss";
 @import "/public/assets/scss/main.scss";
+@import "/public/assets/scss/box-layout.scss";
+@import "/public/assets/scss/rtl.scss";
+
+@import "/public/assets/scss/extra.scss";
+
+@import "/public/assets/scss/components/buttons";
+@import "/public/assets/scss/components/forms";
+@import "/public/assets/scss/layout/header"
 
 /* Apply to your main container or body */
 // body {

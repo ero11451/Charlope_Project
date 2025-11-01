@@ -18,7 +18,7 @@ const DifferenceTwo = () => {
                     data-aos='fade-right'
                     data-aos-duration={1000}
                   >
-                    <Image width={100} height={100}
+                    <Image width={400} height={500}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/difference/thumb-sm.png'
                       alt='Image_inner'
                     />
@@ -44,7 +44,7 @@ const DifferenceTwo = () => {
                     data-aos-duration={1000}
                     data-aos-delay={300}
                   >
-                    <Image width={100} height={100}
+                    <Image width={200} height={400}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/difference/thumb-lg.png'
                       alt='Image_inner'
                     />
@@ -63,10 +63,10 @@ const DifferenceTwo = () => {
                     Donate <span>Support</span> to Make Difference way
                   </h2>
                   <p>
-                  
-CHARLOPE GLOBAL CHARITY FOUNDATION
-Offering Hope through Education, Health, and Mentorship
-Empowering indigent children and women across Nigeria with access to education, healthcare
+
+                    CHARLOPE GLOBAL CHARITY FOUNDATION
+                    Offering Hope through Education, Health, and Mentorship
+                    Empowering indigent children and women across Nigeria with access to education, healthcare
                   </p>
 
                   <div className='difference-two__inner cta'>
@@ -75,9 +75,8 @@ Empowering indigent children and women across Nigeria with access to education, 
                       <div className='difference-two__tab'>
                         <div className='difference-two__tab-btns'>
                           <button
-                            className={`difference-two__tab-btn ${
-                              activeTab === "mission" ? "active" : ""
-                            }`}
+                            className={`difference-two__tab-btn ${activeTab === "mission" ? "active" : ""
+                              }`}
                             onClick={() => setActiveTab("mission")}
                             aria-label='mission'
                             title='mission'
@@ -85,9 +84,8 @@ Empowering indigent children and women across Nigeria with access to education, 
                             Our Mission
                           </button>
                           <button
-                            className={`difference-two__tab-btn ${
-                              activeTab === "vision" ? "active" : ""
-                            }`}
+                            className={`difference-two__tab-btn ${activeTab === "vision" ? "active" : ""
+                              }`}
                             onClick={() => setActiveTab("vision")}
                             aria-label='vision'
                             title='vision'
@@ -95,14 +93,13 @@ Empowering indigent children and women across Nigeria with access to education, 
                             Our Vision
                           </button>
                           <button
-                            className={`difference-two__tab-btn ${
-                              activeTab === "excellence" ? "active" : ""
-                            }`}
+                            className={`difference-two__tab-btn ${activeTab === "excellence" ? "active" : ""
+                              }`}
                             onClick={() => setActiveTab("excellence")}
                             aria-label='excellence'
                             title='excellence'
                           >
-                          Core Values
+                            Core Values
                           </button>
                         </div>
 
@@ -114,7 +111,7 @@ Empowering indigent children and women across Nigeria with access to education, 
                             >
                               <ul>
                                 <li>
-                                To offer financial support, mentorship, and healthcare assistance to indigent children and women in Nigeria.
+                                  To offer financial support, mentorship, and healthcare assistance to indigent children and women in Nigeria.
                                 </li>
                               </ul>
                             </div>
@@ -126,7 +123,7 @@ Empowering indigent children and women across Nigeria with access to education, 
                             >
                               <ul>
                                 <li>
-                                A Nigeria where every child learns and every woman lives with dignity and hope.
+                                  A Nigeria where every child learns and every woman lives with dignity and hope.
                                 </li>
                               </ul>
                             </div>
@@ -138,7 +135,7 @@ Empowering indigent children and women across Nigeria with access to education, 
                             >
                               <ul>
                                 <li>
-                                Compassion • Integrity • Accountability • Empowerment • Service.
+                                  Compassion • Integrity • Accountability • Empowerment • Service.
 
                                 </li>
                               </ul>
@@ -252,7 +249,7 @@ Empowering indigent children and women across Nigeria with access to education, 
           <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/spade-green-two.png' alt='Image_inner' />
         </div>
       </section>
-     
+
     </>
   );
 };

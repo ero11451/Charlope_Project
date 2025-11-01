@@ -11,10 +11,10 @@ const CommitTwo = () => {
           <div className='col-12 col-lg-5 col-xl-5'>
             <div className='commit__thumb'>
               <div className='thumb-lg'>
-                <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/commit-thumb.png' alt='Image_inner' />
+                <Image width={400} height={500} src='https://nextjs.charifund.wowtheme7.com/assets/images/commit-thumb.png' alt='Image_inner' />
               </div>
               <div className='thumb-sm'>
-                <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/commit-shape.png' alt='Image_inner' />
+                <Image width={400} height={500} src='https://nextjs.charifund.wowtheme7.com/assets/images/commit-shape.png' alt='Image_inner' />
               </div>
               <div className='commit-count'>
                 <h4>
@@ -96,7 +96,7 @@ const CommitTwo = () => {
                 <div className='help-two-card-wrapper'>
                   <div className='help-two__card van-tilt'>
                     <div className='help-card-thumb'>
-                      <Image width={100} height={100}
+                      <Image width={400} height={500}
                         src='https://nextjs.charifund.wowtheme7.com/assets/images/help/author.png'
                         alt='Image_inner'
                       />

@@ -95,7 +95,7 @@ const HeaderTwo = () => {
                 <nav className='navbar p-0'>
                   <div className='navbar-logo'>
                     <Link href='/'>
-                      <Image width={150} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/logo.png' alt='Image_inner' />
+                    <Image width={450} height={500}  src='/assets/images/logo.png' alt='Image_inner' />
                     </Link>
                   </div>
 
@@ -183,7 +183,8 @@ const HeaderTwo = () => {
           <div className='mobile-menu__header nav-fade'>
             <div className='logo'>
               <Link href='/' aria-label='home page' title='logo'>
-                <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/logo.png' alt='Image_inner' />
+              <Image width={450} height={500} src='/assets/images/logo.png' alt='Image_inner' />
+
               </Link>
             </div>
             <button
@@ -203,7 +204,7 @@ const HeaderTwo = () => {
           </div>
           <div className='mobile-menu__social social nav-fade'>
             <Link
-              href='https://www.facebook.com/'
+              href='https://facebook.com/charlopeglobalfoundation'
               target='_blank'
               aria-label='share us on facebook'
               title='facebook'
@@ -219,7 +220,7 @@ const HeaderTwo = () => {
               <i className='fa-brands fa-vimeo-v' />
             </Link>
             <Link
-              href='https://x.com/'
+              href='https://www.tiktok.com/@charlopefoundation'
               target='_blank'
               aria-label='share us on twitter'
               title='twitter'
@@ -227,7 +228,7 @@ const HeaderTwo = () => {
               <i className='fa-brands fa-twitter' />
             </Link>
             <Link
-              href='https://www.linkedin.com/'
+              href='https://www.tiktok.com/@charlopefoundation'
               target='_blank'
               aria-label='share us on linkedin'
               title='linkedin'

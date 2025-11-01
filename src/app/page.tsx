@@ -9,6 +9,7 @@ import Preloader from "@/components/Preloader";
 import CommitTwo from "@/components/CommitTwo";
 import CommunityTwo from "@/components/CommunityTwo";
 import BannerThree from "@/components/BannerThree";
+// import CommunityThree from "@/components/CommunityThree";
 
 export const metadata = {
   title: "Charifund | Nonprofit & Fundraising Charity NEXT JS Template",
@@ -33,6 +34,11 @@ const page = () => {
 
         {/* DifferenceOne */}
         <DifferenceOne />
+      {/* <div className="mt-5 pt-5">
+        <CommunityThree />
+
+      </div> */}
+  
 
         <CommunityTwo />
         {/* TestimonialTwo */}

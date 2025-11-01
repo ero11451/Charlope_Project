@@ -10,11 +10,11 @@ export default function Admin() {
     const [form, setForm] = useState({ title: "", description: "", category: "", percentage: "", raised: "", goal: "" });
     const [editId, setEditId] = useState<string | null | number>();
 
-    const fetchCauses =  () => {
-       return fetch("/api/causes").then((res)=>  {
-          return res.json(); 
-        }).then((data)=>setCauses(data));
-       ;
+    const fetchCauses = () => {
+        return fetch("/api/causes").then((res) => {
+            return res.json();
+        }).then((data) => setCauses(data));
+        ;
     };
 
     useEffect(() => {
@@ -61,16 +61,16 @@ export default function Admin() {
                 id: "Cause",
                 title: "AddCauseForm",
                 content: <>
-                 <AddCauseForm editId={editId} setForm={setForm} handleSubmit={handleSubmit} form={form} />
-                 <CausesList causes={causes} handleEdit={handleEdit} handleDelete={handleDelete} />
-                 </> 
-            },{
+                    <AddCauseForm editId={editId} setForm={setForm} handleSubmit={handleSubmit} form={form} />
+                    <CausesList causes={causes} handleEdit={handleEdit} handleDelete={handleDelete} />
+                </>
+            }, {
                 id: "Contact",
                 title: "Contact Messages",
-                content:<><MessagesPage /></>
+                content: <><MessagesPage /></>
             }]} defaultActiveId={"Cause"} />
 
-           
+
         </div>
     );
 }

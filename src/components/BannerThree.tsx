@@ -137,7 +137,7 @@ const BannerThree = () => {
               <div className='banner-three__thumb-inner'>
                 <div className='group'>
                   <div className='m-one move-image'>
-                    <Image width={100} height={100}
+                    <Image width={200} height={350}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/banner/m-one.png'
                       alt='Image_inner'
                       data-aos='fade-right'
@@ -145,7 +145,7 @@ const BannerThree = () => {
                     />
                   </div>
                   <div className='m-three move-image'>
-                    <Image width={100} height={100}
+                  <Image width={200} height={350}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/banner/m-three.png'
                       alt='Image_inner'
                       data-aos='fade-right'
@@ -156,7 +156,7 @@ const BannerThree = () => {
                 </div>
                 <div className='group'>
                   <div className='m-two move-image'>
-                    <Image width={100} height={100}
+                  <Image width={200} height={350}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/banner/m-two.png'
                       alt='Image_inner'
                       data-aos='zoom-in'
@@ -164,7 +164,7 @@ const BannerThree = () => {
                     />
                   </div>
                   <div className='m-four move-image'>
-                    <Image width={100} height={100}
+                  <Image width={200} height={350}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/banner/m-four.png'
                       alt='Image_inner'
                       data-aos='zoom-in'
@@ -175,7 +175,7 @@ const BannerThree = () => {
                 </div>
                 <div className='group'>
                   <div className='m-five move-image'>
-                    <Image width={100} height={100}
+                  <Image width={200} height={350}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/difference/thub-sm-two.png'
                       alt='Image_inner'
                       data-aos='fade-left'
@@ -190,7 +190,7 @@ const BannerThree = () => {
         </div>
       </div>
       <div className='shape-lg'>
-        <Image width={100} height={100}
+      <Image width={200} height={350}
           src='/assets/images/banner/banner-three-bg.png'
           alt='Image_inner'
           data-aos='zoom-in'
@@ -198,7 +198,7 @@ const BannerThree = () => {
         />
       </div>
       <div className='sprade-shape'>
-        <Image width={100} height={100}
+      <Image width={200} height={350}
           src='/assets/images/sprade-base.png'
           alt='Image_inner'
           className='base-img'
@@ -207,7 +207,7 @@ const BannerThree = () => {
         />
       </div>
       <div className='parasuit'>
-        <Image width={100} height={100} src='/assets/images/parasuit.png' alt='Image_inner' />
+      <Image width={200} height={350} src='/assets/images/parasuit.png' alt='Image_inner' />
       </div>
     </section>
   );

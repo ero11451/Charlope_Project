@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import ProgressBar from "../helper/ProgressBar";
-import Image from "next/image";
+// import Image from "next/image";
 import { Cause } from "./Admin/CausesList";
 const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
 
@@ -28,19 +28,18 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
           </div>
         </div>
         <div className='row gutter-30'>
-          {causes.map((c: Cause<string>) => <div  key={c.id} className='col-12 col-md-6 col-xl-4 col-xxl-3'>
+          {causes.map((c: Cause<string>) => <div key={c.id} className='col-12 col-md-6 col-xl-4 col-xxl-3'>
             <div
-            
               className='cause__slider-inner'
               data-aos='fade-up'
               data-aos-duration={1000}
             >  <div className='cause__slider-single van-tilt'>
                 <div className='thumb'>
                   <Link href='/cause-details'>
-                    <Image width={300} height={200} src='https://nextjs.charifund.wowtheme7.com/assets/images/cause/one.png' alt='Image_inner' />
+                    {/* <Image width={300} height={200} src='https://nextjs.charifund.wowtheme7.com/assets/images/cause/one.png' alt='Image_inner' /> */}
                   </Link>
                   <div className='tag'>
-                    <Link href='/our-causes'>{c.category}</Link>
+                    {/* <Link href='/our-causes'>{c.category}</Link> */}
                   </div>
                 </div>
                 <div className='content'>

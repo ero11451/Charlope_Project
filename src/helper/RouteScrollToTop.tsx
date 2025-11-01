@@ -190,9 +190,9 @@ const HeaderTwo: React.FC = () => {
 
           <div className="mobile-menu__social social nav-fade">
             {[
-              { href: "https://www.facebook.com/", icon: "fa-facebook-f" },
+              { href: "https://facebook.com/charlopeglobalfoundation", icon: "fa-facebook-f" },
               { href: "https://vimeo.com/", icon: "fa-vimeo-v" },
-              { href: "https://x.com/", icon: "fa-twitter" },
+              { href: "https://www.tiktok.com/@charlopefoundation", icon: "fa-twitter" },
               { href: "https://www.linkedin.com/", icon: "fa-linkedin-in" },
             ].map((social) => (
               <Link

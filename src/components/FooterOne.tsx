@@ -16,7 +16,7 @@ const FooterOne = () => {
                 <div className='footer-two__widget-logo'>
                   <Link href='/'>
                     <Image
-                      src="https://nextjs.charifund.wowtheme7.com/assets/images/logo.png"
+                      src="/assets/images/logo.png"
                       alt="Company Logo"
                       width = {120}
                       height ={100}
@@ -67,24 +67,6 @@ const FooterOne = () => {
                         Contact us
                       </Link>
                     </li>
-            {/*      <li>
-                      <Link href='/our-causes'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Our Campaign
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/faq'>
-                        <i className='fa-solid fa-arrow-right' />
-                        FAQ
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/contact-us'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Get A Quote
-                      </Link>
-                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -149,24 +131,6 @@ const FooterOne = () => {
                         </div>
                       </div>
                     </li>
-                    {/*  <li>
-                      <Link href='/our-causes'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Our Campaign
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/our-causes'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Food Support
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/our-causes'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Health Support
-                      </Link>
-                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -246,10 +210,10 @@ const FooterOne = () => {
             </div>
           </div>
         </div>
-        {/* <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
+       <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
           <Image 
             width={100} height={100} 
-            src='assets/images/sprade.png'
+            src='https://nextjs.charifund.wowtheme7.com/assets/images/sprade.png'
             alt='Image_inner'
             className='base-img'
           />
@@ -260,7 +224,7 @@ const FooterOne = () => {
           data-aos-duration={1000}
         >
           <Image width={100} height={100}  src='https://nextjs.charifund.wowtheme7.com/assets/images/sprade-light.png' alt='Image_inner' />
-        </div>*/}
+        </div>
       </footer>
     </>
   );

@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse , type NextRequest as INextRequest } from "next/server";
+import { NextResponse , type NextRequest as INextRequest } from "next/server";
 import db from "../../../../lib/db";
 
 // GET all causes

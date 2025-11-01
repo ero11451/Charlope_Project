@@ -50,11 +50,11 @@ const ContactUsInner = () => {
                     <h6>Location</h6>
                     <p>
                       <a
-                        href='https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8'
+                        href='https://maps.app.goo.gl/XkRD56V3yUNsZd5i7'
                         target='_blank'
                         rel='noreferrer'
                       >
-                        55 Main street, 2nd block, Melbourne, Australia
+                        10 Dr Sydney Usiegbe Street off Ulemon Road Benin city.
                       </a>
                     </p>
                   </div>
@@ -68,9 +68,9 @@ const ContactUsInner = () => {
                     <p>
                       <a href='tel:2305-587-3407'>+1 (368) 567 89 54 </a>
                     </p>
-                    <p>
+                    {/* <p>
                       <a href='tel:2305-587-3407'>+236 (456) 896 22</a>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 <div className='contact-main__single'>
@@ -89,6 +89,10 @@ const ContactUsInner = () => {
                     </p>
                   </div>
                 </div>
+                {/* [10/22/25, 11:49:13 PM] Charles Rgu: instagram.com/charlopefoundation
+[10/22/25, 11:49:13 PM] Charles Rgu: https://www.tiktok.com/@charlopefoundation
+[10/22/25, 11:49:14 PM] Charles Rgu: https://facebook.com/charlopeglobalfoundation
+[10/22/25, 11:49:14 PM] Charles Rgu: https://www.tiktok.com/@charlopefoundationCharlopecharity */}
                 <div className='contact-main__single'>
                   <div className='thumb'>
                     <i className='fa-solid fa-share-nodes' />
@@ -97,7 +101,7 @@ const ContactUsInner = () => {
                     <h6>Social</h6>
                     <div className='social'>
                       <a
-                        href='https://www.facebook.com/'
+                        href='https://facebook.com/charlopeglobalfoundation'
                         target='_blank'
                         aria-label='share us on facebook'
                         title='facebook'
@@ -115,7 +119,7 @@ const ContactUsInner = () => {
                         <i className='fa-brands fa-vimeo-v' />
                       </a>
                       <a
-                        href='https://x.com/'
+                        href='https://www.tiktok.com/@charlopefoundation'
                         target='_blank'
                         aria-label='share us on twitter'
                         title='twitter'
@@ -124,20 +128,20 @@ const ContactUsInner = () => {
                         <i className='fa-brands fa-twitter' />
                       </a>
                       <a
-                        href='https://www.linkedin.com/'
+                        href='https://www.tiktok.com/@charlopefoundation'
                         target='_blank'
-                        aria-label='share us on linkedin'
-                        title='linkedin'
+                        aria-label='share us on tiktok'
+                        title='tiktok'
                         rel='noreferrer'
                       >
-                        <i className='fa-brands fa-linkedin-in' />
+                        <i className='fa-brands fa-tiktok-in' />
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
               <div className='contact-main__thumb cta'>
-                <Image width={100} height= {130} src='https://nextjs.charifund.wowtheme7.com/assets/images/contact-thumb.png' alt='Image_inner' />
+                <Image width={100} height={130} src='https://nextjs.charifund.wowtheme7.com/assets/images/contact-thumb.png' alt='Image_inner' />
               </div>
             </div>
           </div>
