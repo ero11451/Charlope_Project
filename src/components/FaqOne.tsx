@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const FaqOne = () => {
   return (
     <section className='faq'>
@@ -155,7 +157,7 @@ const FaqOne = () => {
                   data-aos-duration={1000}
                   data-aos-delay={100}
                 >
-                  <img src='https://nextjs.charifund.wowtheme7.com/assets/images/faq/thumb-lg.png' alt='Image_inner' />
+                  <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/faq/thumb-lg.png' alt='Image_inner' />
                 </div>
                 <div
                   className='thumb-sm'
@@ -163,7 +165,7 @@ const FaqOne = () => {
                   data-aos-duration={1000}
                   data-aos-delay={300}
                 >
-                  <img src='https://nextjs.charifund.wowtheme7.com/assets/images/faq/thumb-sm.png' alt='Image_inner' />
+                  <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/faq/thumb-sm.png' alt='Image_inner' />
                 </div>
               </div>
             </div>
@@ -171,7 +173,7 @@ const FaqOne = () => {
         </div>
       </div>
       <div className='shape d-none d-lg-block'>
-        <img src='https://nextjs.charifund.wowtheme7.com/assets/images/faq/shape.png' alt='Image_inner' />
+        <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/faq/shape.png' alt='Image_inner' />
       </div>
     </section>
   );

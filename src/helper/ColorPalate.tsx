@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, {  useState } from "react";
 
 const themes = [
   { name: "default-color", file: "assets/css/default-theme.css" },
@@ -22,15 +22,15 @@ const ColorPalate = () => {
 
   const handleColorActive = () => setActive((prev) => !prev);
 
-  const handleThemeChange = (themeName, themeFile) => {
-    const themeLink = document.getElementById("switch-color");
+  const handleThemeChange = (themeName: React.SetStateAction<string>, themeFile: string) => {
+    const themeLink = document.getElementById("switch-color")  as HTMLLinkElement | null;;
     if (themeLink) {
       themeLink.href = themeFile;
       setActiveTheme(themeName);
     }
   };
 
-  const handleBoxLayout = (type) => {
+  const handleBoxLayout = (type: string) => {
     const body = document.body;
     if (type === "box") {
       body.classList.add("box-layout");
@@ -41,7 +41,7 @@ const ColorPalate = () => {
     }
   };
 
-  const handleDarkVersion = (type) => {
+  const handleDarkVersion = (type: string) => {
     const body = document.body;
     if (type === "dark") {
       body.classList.add("dark-body");
@@ -52,7 +52,7 @@ const ColorPalate = () => {
     }
   };
 
-  const handleStickyHeader = (type) => {
+  const handleStickyHeader = (type: string) => {
     const body = document.body;
     if (type === "sticky") {
       body.classList.add("want-sticky-header");

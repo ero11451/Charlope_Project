@@ -1,8 +1,9 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 // import ModalVideo from "react-modal-video";
 const DifferenceTwo = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("mission");
   return (
     <>
@@ -17,12 +18,12 @@ const DifferenceTwo = () => {
                     data-aos='fade-right'
                     data-aos-duration={1000}
                   >
-                    <img
+                    <Image width={100} height={100}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/difference/thumb-sm.png'
                       alt='Image_inner'
                     />
                     <div className='grid-line'>
-                      <img
+                      <Image width={100} height={100}
                         src='https://nextjs.charifund.wowtheme7.com/assets/images/help/grid.png'
                         alt='Image_inner'
                         className='base-img'
@@ -43,7 +44,7 @@ const DifferenceTwo = () => {
                     data-aos-duration={1000}
                     data-aos-delay={300}
                   >
-                    <img
+                    <Image width={100} height={100}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/difference/thumb-lg.png'
                       alt='Image_inner'
                     />
@@ -248,7 +249,7 @@ Empowering indigent children and women across Nigeria with access to education, 
           </div>
         </div>
         <div className='spade'>
-          <img src='https://nextjs.charifund.wowtheme7.com/assets/images/spade-green-two.png' alt='Image_inner' />
+          <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/spade-green-two.png' alt='Image_inner' />
         </div>
       </section>
      

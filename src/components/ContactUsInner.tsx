@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 
 const ContactUsInner = () => {
@@ -136,7 +137,7 @@ const ContactUsInner = () => {
                 </div>
               </div>
               <div className='contact-main__thumb cta'>
-                <img src='https://nextjs.charifund.wowtheme7.com/assets/images/contact-thumb.png' alt='Image_inner' />
+                <Image width={100} height= {130} src='https://nextjs.charifund.wowtheme7.com/assets/images/contact-thumb.png' alt='Image_inner' />
               </div>
             </div>
           </div>
@@ -189,9 +190,16 @@ const ContactUsInner = () => {
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                   />
                 </div>
-                <button type="submit" className="btn btn-primary">
-                  Get A Quote
-                </button>
+                <div className='form-cta'>
+                  <button
+                    type='submit'
+                    aria-label='submit message'
+                    title='submit message'
+                    className='btn--primary'
+                  >
+                    Get A Quote <i className='fa-solid fa-arrow-right' />
+                  </button>
+                </div>
               </form>
             </div>
           </div>

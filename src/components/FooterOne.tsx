@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const FooterOne = () => {
@@ -14,13 +15,13 @@ const FooterOne = () => {
               >
                 <div className='footer-two__widget-logo'>
                   <Link href='/'>
-                    <img
-                      src="/assets/images/logo.png"
+                    <Image
+                      src="https://nextjs.charifund.wowtheme7.com/assets/images/logo.png"
                       alt="Company Logo"
+                      width = {120}
+                      height ={100}
                       style={{
-                        width: "100%",
                         maxWidth: "500px",
-                        height: "100%",
                         minHeight: "10px",
                         objectFit: "contain",
                       }}
@@ -245,20 +246,21 @@ const FooterOne = () => {
             </div>
           </div>
         </div>
-        <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
-          <img
+        {/* <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
+          <Image 
+            width={100} height={100} 
             src='assets/images/sprade.png'
             alt='Image_inner'
             className='base-img'
           />
-        </div>
+        </div> 
         <div
           className='sprade-light'
           data-aos='zoom-in'
           data-aos-duration={1000}
         >
-          <img src='https://nextjs.charifund.wowtheme7.com/assets/images/sprade-light.png' alt='Image_inner' />
-        </div>
+          <Image width={100} height={100}  src='https://nextjs.charifund.wowtheme7.com/assets/images/sprade-light.png' alt='Image_inner' />
+        </div>*/}
       </footer>
     </>
   );

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-const AOSWrapper = ({ children }:any) => {
+const AOSWrapper = ({ children }:{children: ReactNode}) => {
   return <>{children}</>;
 };
 

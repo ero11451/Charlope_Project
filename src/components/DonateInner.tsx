@@ -1,10 +1,13 @@
 "use client";
-import Link from "next/link";
+import Image from "next/image";
+
+
+// import Link from "next/link";
 import { useState } from "react";
 
 const DonateInner = () => {
-  let [amount, setAmount] = useState(50);
-  const [isOpen, setIsOpen] = useState(false);
+  // let [amount, setAmount] = useState(50);
+  // const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("mission");
   return (
     <section className='difference-two'>
@@ -200,7 +203,7 @@ const DonateInner = () => {
       </div>
     </div>
     <div className='spade'>
-      <img src='https://nextjs.charifund.wowtheme7.com/assets/images/spade-green-two.png' alt='Image_inner' />
+      <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/spade-green-two.png' alt='Image_inner' />
     </div>
   </section>
     // <div className='cm-details donate-us community checkout faq'>

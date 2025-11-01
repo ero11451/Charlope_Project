@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const BreadcrumbOne = ({ title }) => {
   return (
     <section className='common-banner'>
@@ -13,14 +15,14 @@ const BreadcrumbOne = ({ title }) => {
         </div>
       </div>
       <div className='banner-bg'>
-        <img src='https://nextjs.charifund.wowtheme7.com/assets/images/banner/banner-bg.png' alt='Image_inner' />
+        <Image width={100} height={100} priority src='https://nextjs.charifund.wowtheme7.com/assets/images/banner/banner-bg.png' alt='Image_inner' />
       </div>
       <div className='shape'>
-        <img src='https://nextjs.charifund.wowtheme7.com/assets/images/shape.png' alt='Image_inner' />
+        <Image width={100} height={100} priority src='https://nextjs.charifund.wowtheme7.com/assets/images/shape.png' alt='Image_inner' />
       </div>
       <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
-        <img
-          src='assets/images/sprade-base.png'
+        <Image width={100} height={100}
+          src='https://nextjs.charifund.wowtheme7.com/assets/images/sprade-base.png'
           alt='Image_inner'
           className='base-img'
         />

@@ -2,6 +2,7 @@
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 import Link from "next/link";
+import Image from "next/image";
 const CommitTwo = () => {
   return (
     <section className='commit help-two ff-commit pt-120 pb-120'>
@@ -10,10 +11,10 @@ const CommitTwo = () => {
           <div className='col-12 col-lg-5 col-xl-5'>
             <div className='commit__thumb'>
               <div className='thumb-lg'>
-                <img src='https://nextjs.charifund.wowtheme7.com/assets/images/commit-thumb.png' alt='Image_inner' />
+                <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/commit-thumb.png' alt='Image_inner' />
               </div>
               <div className='thumb-sm'>
-                <img src='https://nextjs.charifund.wowtheme7.com/assets/images/commit-shape.png' alt='Image_inner' />
+                <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/commit-shape.png' alt='Image_inner' />
               </div>
               <div className='commit-count'>
                 <h4>
@@ -62,7 +63,7 @@ const CommitTwo = () => {
                       <div className='content'>
                         <h6 className='fw-5'>Start helping them</h6>
                         <p>
-                          Raising awareness about the charity's mission and
+                          Raising awareness about the  mission and
                           cause.
                         </p>
                       </div>
@@ -75,8 +76,8 @@ const CommitTwo = () => {
                       <div className='content'>
                         <h6 className='fw-5'>Make Donations</h6>
                         <p>
-                          Raising awareness about the charity's mission and
-                          cause.
+                          {/* Raising awareness about the charity's mission and
+                          cause. */}
                         </p>
                       </div>
                     </div>
@@ -95,7 +96,7 @@ const CommitTwo = () => {
                 <div className='help-two-card-wrapper'>
                   <div className='help-two__card van-tilt'>
                     <div className='help-card-thumb'>
-                      <img
+                      <Image width={100} height={100}
                         src='https://nextjs.charifund.wowtheme7.com/assets/images/help/author.png'
                         alt='Image_inner'
                       />
@@ -114,7 +115,7 @@ const CommitTwo = () => {
         </div>
       </div>
       <div className='fc-two'>
-        <img src='https://nextjs.charifund.wowtheme7.com/assets/images/fc-nine.png' alt='Image_inner' />
+        <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/fc-nine.png' alt='Image_inner' />
       </div>
     </section>
   );

@@ -1,12 +1,13 @@
 "use client";
 
+
 import { useEffect, useRef } from "react";
 
 const CustomCursor = () => {
-  const cursorOuterRef:any = useRef(null);
-  const cursorInnerRef:any = useRef(null);
-  console.warn = () => {};
-  console.error = () => {};
+  const cursorOuterRef = useRef<HTMLDivElement | null>(null);
+  const cursorInnerRef = useRef<HTMLDivElement | null>(null);
+  // console.warn = () => {};
+  // console.error = () => {};
   useEffect(() => {
     const cursorOuter = cursorOuterRef.current;
     const cursorInner = cursorInnerRef.current;
@@ -16,7 +17,7 @@ const CustomCursor = () => {
     let mouseX = 0;
     let mouseY = 0;
 
-    const moveCursor = (e:any) => {
+    const moveCursor = (e:MouseEvent) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
 

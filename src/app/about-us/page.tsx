@@ -20,7 +20,7 @@ const page = () => {
         <Preloader />
 
         {/* CustomCursor  */}
-        <CustomCursor />s
+        <CustomCursor />
 
         {/* HeaderOne */}
         <HeaderTwo />

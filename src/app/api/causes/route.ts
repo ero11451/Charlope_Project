@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse , type NextRequest as INextRequest } from "next/server";
 import db from "../../../../lib/db";
 
 // GET all causes
@@ -8,7 +8,7 @@ export async function GET() {
 }
 
 // POST create a new cause
-export async function POST(req:NextRequest) {
+export async function POST(req:INextRequest) {
   const body = await req.json();
   const { title, description, category, percentage, raised, goal } = body;
 
@@ -28,7 +28,7 @@ export async function POST(req:NextRequest) {
 }
 
 // PUT update a cause
-export async function PUT(req: NextRequest) {
+export async function PUT(req: INextRequest) {
   const body = await req.json();
   const { id, title, description, category, percentage, raised, goal } = body;
 
@@ -48,7 +48,7 @@ export async function PUT(req: NextRequest) {
 }
 
 // DELETE a cause
-export async function DELETE(req: any) {
+export async function DELETE(req: INextRequest) {
   const body = await req.json();
   const { id } = body;
 

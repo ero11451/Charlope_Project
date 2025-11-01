@@ -2,9 +2,10 @@
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 const HeaderTwo = () => {
-  let pathname = usePathname();
-  let [mobileMenu, setMobileMenu] = useState(false);
+  const pathname = usePathname();
+  const [mobileMenu, setMobileMenu] = useState(false);
   const [scroll, setScroll] = useState(false);
 
   const handleMobileMenu = () => {
@@ -22,7 +23,7 @@ const HeaderTwo = () => {
     };
   }, []);
 
-  const mobileMenuListRef: any = useRef(null);
+  const mobileMenuListRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const desktopMenu = document.querySelector(".navbar__menu");
@@ -30,58 +31,57 @@ const HeaderTwo = () => {
     if (desktopMenu && mobileMenuListRef.current) {
       mobileMenuListRef.current.innerHTML = desktopMenu.innerHTML;
 
-      const setupDropdownToggles = (container: any) => {
-        const dropdownLabels = container.querySelectorAll(
-          ".navbar__dropdown-label"
-        );
+      // const setupDropdownToggles = (container: any) => {
+      //   const dropdownLabels = container.querySelectorAll(
+      //     ".navbar__dropdown-label"
+      //   );
 
-        dropdownLabels.forEach((label: any) => {
-          label.addEventListener("click", function (e: any) {
-            e.preventDefault();
-            e.stopPropagation();
+      //   dropdownLabels.forEach((label: any) => {
+      //     label.addEventListener("click", function (e: any) {
+      //       e.preventDefault();
+      //       e.stopPropagation();
 
-            const subMenu: any = this.nextElementSibling;
+      //       const subMenu: any = this.nextElementSibling;
 
-            // ✅ Only close siblings within the same level (UL)
-            const siblingLabels = Array.from(
-              this.closest("ul")?.querySelectorAll(
-                ":scope > li > .navbar__dropdown-label"
-              ) || []
-            );
+      //       const siblingLabels = Array.from(
+      //         this.closest("ul")?.querySelectorAll(
+      //           ":scope > li > .navbar__dropdown-label"
+      //         ) || []
+      //       );
 
-            siblingLabels.forEach((sibling: any) => {
-              const siblingSubMenu: any = sibling.nextElementSibling;
+      //       siblingLabels.forEach((sibling: any) => {
+      //         const siblingSubMenu: any = sibling.nextElementSibling;
 
-              if (
-                sibling !==
-                siblingSubMenu &&
-                siblingSubMenu.classList.contains("navbar__sub-menu")
-              ) {
-                siblingSubMenu.style.maxHeight = "0px";
-                siblingSubMenu.classList.remove("show");
-                sibling.classList.remove("navbar__item-active");
-              }
-            });
+      //         if (
+      //           sibling !==
+      //           siblingSubMenu &&
+      //           siblingSubMenu.classList.contains("navbar__sub-menu")
+      //         ) {
+      //           siblingSubMenu.style.maxHeight = "0px";
+      //           siblingSubMenu.classList.remove("show");
+      //           sibling.classList.remove("navbar__item-active");
+      //         }
+      //       });
 
-            // Toggle current submenu with smooth animation
-            if (subMenu && subMenu.classList.contains("navbar__sub-menu")) {
-              const isOpen = subMenu.classList.contains("show");
+      //       // Toggle current submenu with smooth animation
+      //       if (subMenu && subMenu.classList.contains("navbar__sub-menu")) {
+      //         const isOpen = subMenu.classList.contains("show");
 
-              if (isOpen) {
-                subMenu.style.maxHeight = "0px";
-                subMenu.classList.remove("show");
-                this.classList.remove("navbar__item-active");
-              } else {
-                subMenu.classList.add("show");
-                subMenu.style.maxHeight = subMenu.scrollHeight + "px";
-                this.classList.add("navbar__item-active");
-              }
-            }
-          });
-        });
-      };
+      //         if (isOpen) {
+      //           subMenu.style.maxHeight = "0px";
+      //           subMenu.classList.remove("show");
+      //           this.classList.remove("navbar__item-active");
+      //         } else {
+      //           subMenu.classList.add("show");
+      //           subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+      //           this.classList.add("navbar__item-active");
+      //         }
+      //       }
+      //     });
+      //   });
+      // };
 
-      setupDropdownToggles(mobileMenuListRef.current);
+      // setupDropdownToggles(mobileMenuListRef.current);
     }
   }, []);
 
@@ -95,7 +95,7 @@ const HeaderTwo = () => {
                 <nav className='navbar p-0'>
                   <div className='navbar-logo'>
                     <Link href='/'>
-                      <img src='/assets/images/logo.png' style={{ width: "150px" }} alt='Image_inner' />
+                      <Image width={150} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/logo.png' alt='Image_inner' />
                     </Link>
                   </div>
 
@@ -183,7 +183,7 @@ const HeaderTwo = () => {
           <div className='mobile-menu__header nav-fade'>
             <div className='logo'>
               <Link href='/' aria-label='home page' title='logo'>
-                <img src='https://nextjs.charifund.wowtheme7.com/assets/images/logo.png' alt='Image_inner' />
+                <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/logo.png' alt='Image_inner' />
               </Link>
             </div>
             <button

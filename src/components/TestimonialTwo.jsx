@@ -1,4 +1,8 @@
 "use client";
+
+import Image from "next/image";
+
+
 import { useRef } from "react";
 import Slider from "react-slick";
 
@@ -51,7 +55,7 @@ const TestimonialTwo = () => {
             <div className='row align-items-center'>
               <div className='col-12 col-lg-5 d-none d-lg-block'>
                 <div className='testimonial-two__thumb'>
-                  <img
+                  <Image width={100} height={100}
                     src='https://nextjs.charifund.wowtheme7.com/assets/images/testimonial-thumb.png'
                     alt='Image_inner'
                   />
@@ -121,7 +125,7 @@ const TestimonialTwo = () => {
                     </button> */}
                   </div>
                   <div className='quote'>
-                    <img src='/assets/images/quote-two.png' alt='Image_inner' />
+                    <Image width={100} height={100} src='/assets/images/quote-two.png' alt='Image_inner' />
                   </div>
                 </div>
               </div>
@@ -130,10 +134,10 @@ const TestimonialTwo = () => {
         </div>
       </div>
       <div className='blog-bg'>
-        <img src='/assets/images/blog/blog-bg.png' alt='Image_inner' />
+        <Image width={100} height={100} src='/assets/images/blog/blog-bg.png' alt='Image_inner' />
       </div>
       <div className='spade'>
-        <img
+        <Image width={100} height={100}
           src='/assets/images/community/spade.png'
           alt='Image_inner'
           className='base-img'

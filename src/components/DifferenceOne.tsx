@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
 import Slider from "react-slick";
@@ -220,7 +221,7 @@ const DifferenceOne = () => {
               </div>
             </div>
           </div>
-          <div className='slider-navigation'>
+          {/* <div className='slider-navigation'>
             <button
               onClick={() => sliderRef.current.slickPrev()}
               type='button'
@@ -239,7 +240,7 @@ const DifferenceOne = () => {
             >
               <i className='fa-solid fa-arrow-right' />
             </button>
-          </div>
+          </div> */}
         </div>
         <div
           className='shape-hand'
@@ -247,7 +248,7 @@ const DifferenceOne = () => {
           data-aos-duration={1000}
           data-aos-delay={300}
         >
-          <img
+          <Image width={100} height={100}
             src='/assets/images/difference/shape-hand.png'
             alt='Image_inner'
           />

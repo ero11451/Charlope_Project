@@ -2,15 +2,33 @@
 
 import { useEffect, useState } from "react";
 
-export default function MessagesPage() {
-  const [messages, setMessages] = useState([]);
+// Define the type for a single message
+interface Message {
+  id: number;
+  full_name: string;
+  email: string;
+  phone_number: string;
+  message: string;
+  created_at: string; // ISO date string
+}
+
+const MessagesPage = () => {
+  const [messages, setMessages] = useState<Message[]>([]);
 
   useEffect(() => {
     const fetchMessages = async () => {
-      const res = await fetch("/api/contact");
-      const data = await res.json();
-      setMessages(data);
+      try {
+        const res = await fetch("/api/contact");
+        if (!res.ok) {
+          throw new Error("Failed to fetch messages");
+        }
+        const data: Message[] = await res.json();
+        setMessages(data);
+      } catch (error) {
+        console.error(error);
+      }
     };
+
     fetchMessages();
   }, []);
 
@@ -36,16 +54,14 @@ export default function MessagesPage() {
               </tr>
             </thead>
             <tbody>
-              {messages.map((msg:any) => (
+              {messages.map((msg) => (
                 <tr key={msg.id}>
                   <td>{msg.id}</td>
                   <td>{msg.full_name}</td>
                   <td>{msg.email}</td>
                   <td>{msg.phone_number}</td>
                   <td>{msg.message}</td>
-                  <td>
-                    {new Date(msg.created_at).toLocaleString()}
-                  </td>
+                  <td>{new Date(msg.created_at).toLocaleString()}</td>
                 </tr>
               ))}
             </tbody>
@@ -54,4 +70,6 @@ export default function MessagesPage() {
       )}
     </div>
   );
-}
+};
+
+export default MessagesPage;

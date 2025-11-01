@@ -1,4 +1,5 @@
-import { NextResponse } from "next/server";
+
+import { NextResponse, type NextRequest as INextRequest } from "next/server";
 import db from "../../../../lib/db";
 
 export async function GET() {
@@ -7,7 +8,7 @@ export async function GET() {
     return NextResponse.json(messages);
   }
 
-export async function POST(req: any) {
+export async function POST(req:INextRequest) {
   const body = await req.json();
   const { full_name, email, phone_number, message } = body;
 

@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import CausesList from '@/components/Admin/CausesList';
+import CausesList, { Cause } from '@/components/Admin/CausesList';
 import AddCauseForm from '@/components/Admin/AddCauseForm';
 import TabsExample from '@/components/Admin/TabsExample';
 import MessagesPage from '@/components/Admin/MessagesPage';
@@ -8,16 +8,16 @@ import MessagesPage from '@/components/Admin/MessagesPage';
 export default function Admin() {
     const [causes, setCauses] = useState([]);
     const [form, setForm] = useState({ title: "", description: "", category: "", percentage: "", raised: "", goal: "" });
-    const [editId, setEditId] = useState(null);
+    const [editId, setEditId] = useState<string | null | number>();
 
-    const fetchCauses = async () => {
-        const res = await fetch("/api/causes");
-        const data = await res.json();
-        setCauses(data);
+    const fetchCauses =  () => {
+       return fetch("/api/causes").then((res)=>  {
+          return res.json(); 
+        }).then((data)=>setCauses(data));
+       ;
     };
 
     useEffect(() => {
-       
         fetchCauses();
     }, []);
 
@@ -40,12 +40,12 @@ export default function Admin() {
         fetchCauses();
     };
 
-    const handleEdit = (cause: any) => {
+    const handleEdit = (cause: Cause<string>) => {
         setEditId(cause.id);
         setForm(cause);
     };
 
-    const handleDelete = async (id: any) => {
+    const handleDelete = async (id: string | null | number) => {
         await fetch("/api/causes", {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },

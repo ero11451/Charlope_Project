@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Image from "next/image";
+// import Link from "next/link";
 
 const CommunityTwo = () => {
   return (
@@ -30,7 +31,7 @@ const CommunityTwo = () => {
                   </div>
                 </div>
                 <div className='unity'>
-                  <img src='https://nextjs.charifund.wowtheme7.com/assets/images/unit.png' alt='Image_inner' />
+                  <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/unit.png' alt='Image_inner' />
                 </div>
               </div>
             </div>
@@ -38,10 +39,10 @@ const CommunityTwo = () => {
         </div>
       </div>
       <div className='parasuit'>
-        <img src='https://nextjs.charifund.wowtheme7.com/assets/images/parasuit.png' alt='Image_inner' />
+        <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/parasuit.png' alt='Image_inner' />
       </div>
       <div className='spade'>
-        <img src='https://nextjs.charifund.wowtheme7.com/assets/images/fc-twelve.png' alt='Image_inner' />
+        <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/fc-twelve.png' alt='Image_inner' />
       </div>
       <span className='dn-now'>Donate Now</span>
     </section>

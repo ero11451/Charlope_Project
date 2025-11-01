@@ -1,5 +1,6 @@
 "use client"
 
+import { Cause } from "@/components/Admin/CausesList";
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import CauseInner from "@/components/CauseInner";
 import FooterOne from "@/components/FooterOne";
@@ -9,12 +10,11 @@ import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 import { useEffect, useState } from "react";
 
-const page = () => {
-  const [causes, setCauses] = useState([]);
-  const fetchCauses = async () => {
-    const res = await fetch("/api/causes");
-    const data = await res.json();
-    setCauses(data);
+export default function Page()  {
+  const [causes, setCauses] = useState<Cause<string>[]>([]);
+  const fetchCauses =  () => {
+     fetch("/api/causes").then((res) => res.json()).then((data) => setCauses(data)) ;
+    ;
   };
 
   useEffect(() => {
@@ -44,5 +44,3 @@ const page = () => {
     </AOSWrap>
   );
 };
-
-export default page;

@@ -1,32 +1,50 @@
 "use client";
 
 import { useEffect } from "react";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js"; // ensure bootstrap is loaded 
 
-type Tab = {
+// Type for each tab
+type TabType = {
   id: string;
   title: string;
   content: React.ReactNode;
 };
 
+// Props for the component
 interface TabsExampleProps {
-  tabs: Tab[];
+  tabs: TabType[];
   defaultActiveId?: string;
 }
 
-export default function TabsExample({ tabs = [], defaultActiveId }: TabsExampleProps) {
+// Minimal Bootstrap Tab type definition
+interface BootstrapTab {
+  new (element: Element): BootstrapTabInstance;
+}
+
+interface BootstrapTabInstance {
+  show: () => void;
+}
+
+// Extend the window type
+declare global {
+  interface Window {
+    bootstrap?: {
+      Tab: BootstrapTab;
+    };
+  }
+}
+
+const TabsExample: React.FC<TabsExampleProps> = ({ tabs = [], defaultActiveId }) => {
   useEffect(() => {
-    // Initialize Bootstrap tabs AFTER hydration
-    if (typeof window !== "undefined") {
-      const { Tab } = (window as any).bootstrap || {};
-      if (Tab) {
-        const triggerTabList = document.querySelectorAll('[data-bs-toggle="tab"]');
-        triggerTabList.forEach((triggerEl) => new Tab(triggerEl));
-      }
+    if (typeof window !== "undefined" && window.bootstrap?.Tab) {
+      const triggerTabList = document.querySelectorAll<HTMLElement>('[data-bs-toggle="tab"]');
+
+      triggerTabList.forEach((triggerEl) => {
+        // Create a Bootstrap Tab instance for each trigger element
+        new window.bootstrap!.Tab(triggerEl);
+      });
     }
   }, [tabs]);
 
-  // Determine which tab should be active by default
   const activeId = defaultActiveId || (tabs.length > 0 ? tabs[0].id : "");
 
   return (
@@ -43,7 +61,7 @@ export default function TabsExample({ tabs = [], defaultActiveId }: TabsExampleP
               type="button"
               role="tab"
               aria-controls={tab.id}
-              aria-selected={tab.id === activeId ? "true" : "false"}
+              aria-selected={tab.id === activeId}
             >
               {tab.title}
             </button>
@@ -67,4 +85,6 @@ export default function TabsExample({ tabs = [], defaultActiveId }: TabsExampleP
       </div>
     </div>
   );
-}
+};
+
+export default TabsExample;
