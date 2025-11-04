@@ -9,6 +9,7 @@ import Preloader from "@/components/Preloader";
 import CommitTwo from "@/components/CommitTwo";
 import CommunityTwo from "@/components/CommunityTwo";
 import BannerOne from "@/components/BannerOne";
+import BlogOne from "@/components/BlogOne";
 // import CommunityThree from "@/components/CommunityThree";
 
 export const metadata = {
@@ -34,11 +35,12 @@ const page = () => {
 
         {/* DifferenceOne */}
         <DifferenceOne />
-      {/* <div className="mt-5 pt-5">
+        {/* <div className="mt-5 pt-5">
         <CommunityThree />
 
       </div> */}
-  
+
+
 
         <CommunityTwo />
         {/* TestimonialTwo */}
@@ -47,6 +49,7 @@ const page = () => {
         {/* TeamOne */}
         <CommitTwo />
 
+        <BlogOne />
         {/* FooterOne */}
         <FooterOne />
       </section>
