@@ -44,7 +44,10 @@ const BannerOne = () => {
                           <span className='bottom-line'>Transforming Communities.</span>
                         </h1>
                         <p className="text-white">
-                          At Charlope Global Charity Foundation (CGCF), we are driven by compassion to uplift the poor, empower the vulnerable, and bring lasting change to communities in need.
+                          At Charlope Global Charity Foundation (CGCF), 
+                          we are driven by compassion to uplift the poor,
+                          empower the vulnerable, 
+                          and bring lasting change to communities in need.
                         </p>
                         <div className='banner__content-cta cta'>
                           <Link

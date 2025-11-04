@@ -3,6 +3,7 @@
 import { Cause } from "@/components/Admin/CausesList";
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import CauseInner from "@/components/CauseInner";
+import CtaSectionOne from "@/components/CtaSectionOne";
 import FooterOne from "@/components/FooterOne";
 import Header from "@/components/Header";
 import Preloader from "@/components/Preloader";
@@ -34,6 +35,9 @@ export default function Page()  {
 
         {/* BreadcrumbOne */}
         <BreadcrumbOne title='Our Causes' />
+
+
+        <CtaSectionOne />
 
         {/* CauseInner */}
         <CauseInner  causes={causes} />

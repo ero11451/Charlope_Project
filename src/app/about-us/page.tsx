@@ -3,7 +3,7 @@ import Preloader from "@/components/Preloader";
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import CustomCursor from "@/helper/CustomCursor";
 import DifferenceTwo from "@/components/DifferenceTwo";
-import FaqOne from "@/components/FaqOne";
+import TestimonialTwo from "@/components/TestimonialTwo";
 import FooterOne from "@/components/FooterOne";
 import AOSWrap from "@/helper/AOSWrap";
 
@@ -31,6 +31,8 @@ const page = () => {
         {/* DifferenceTwo */}
         <DifferenceTwo />
 
+        {/* TeamOne */}
+        <TestimonialTwo />
         {/* FaqOne */}
         {/* <FaqOne /> */}
 
