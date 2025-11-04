@@ -31,13 +31,13 @@ const BannerThree = () => {
                       Start donating poor people
                     </span>
                     <h1 className='title-animation_inner'>
-                      Offering <span className='bottom-line'>Hope</span>
-                      through <br />Education,
-                      Health, and Mentorship
+                      Bringing<span className='bottom-line'>Hope</span>.
+                      Empowering Lives. <br />
+                      Transforming Communities.
                     </h1>
                     <p>
-
-                      Empowering indigent children and women across Nigeria with access to education, healthcare, and
+                      At Charlope Global Charity Foundation (CGCF), we are driven by compassion to uplift
+                      the poor, empower the vulnerable, and bring lasting change to communities in need.
                     </p>
                     <div className='banner__content-cta cta'>
                       <Link
@@ -66,13 +66,13 @@ const BannerThree = () => {
                       Start donating poor people
                     </span>
                     <h1 className='title-animation_inner'>
-                      Offering <span className='bottom-line'>Hope</span>
-                      through <br />Education,
-                      Health, and Mentorship
+                      Bringing<span className='bottom-line'>Hope</span>.
+                      Empowering Lives. <br />
+                      Transforming Communities.
                     </h1>
                     <p>
-
-                      Empowering indigent children and women across Nigeria with access to education, healthcare, and
+                      At Charlope Global Charity Foundation (CGCF), we are driven by compassion to uplift
+                      the poor, empower the vulnerable, and bring lasting change to communities in need.
                     </p>
                     <div className='banner__content-cta cta'>
                       <Link
@@ -101,13 +101,13 @@ const BannerThree = () => {
                       Start donating poor people
                     </span>
                     <h1 className='title-animation_inner'>
-                      Offering <span className='bottom-line'>Hope</span>
-                      through <br />Education,
-                      Health, and Mentorship
+                      Bringing<span className='bottom-line'>Hope</span>.
+                      Empowering Lives. <br />
+                      Transforming Communities.
                     </h1>
                     <p>
-
-                      Empowering indigent children and women across Nigeria with access to education, healthcare, and
+                      At Charlope Global Charity Foundation (CGCF), we are driven by compassion to uplift
+                      the poor, empower the vulnerable, and bring lasting change to communities in need.
                     </p>
                     <div className='banner__content-cta cta'>
                       <Link
@@ -145,7 +145,7 @@ const BannerThree = () => {
                     />
                   </div>
                   <div className='m-three move-image'>
-                  <Image width={200} height={350}
+                    <Image width={200} height={350}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/banner/m-three.png'
                       alt='Image_inner'
                       data-aos='fade-right'
@@ -156,7 +156,7 @@ const BannerThree = () => {
                 </div>
                 <div className='group'>
                   <div className='m-two move-image'>
-                  <Image width={200} height={350}
+                    <Image width={200} height={350}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/banner/m-two.png'
                       alt='Image_inner'
                       data-aos='zoom-in'
@@ -164,7 +164,7 @@ const BannerThree = () => {
                     />
                   </div>
                   <div className='m-four move-image'>
-                  <Image width={200} height={350}
+                    <Image width={200} height={350}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/banner/m-four.png'
                       alt='Image_inner'
                       data-aos='zoom-in'
@@ -175,7 +175,7 @@ const BannerThree = () => {
                 </div>
                 <div className='group'>
                   <div className='m-five move-image'>
-                  <Image width={200} height={350}
+                    <Image width={200} height={350}
                       src='https://nextjs.charifund.wowtheme7.com/assets/images/difference/thub-sm-two.png'
                       alt='Image_inner'
                       data-aos='fade-left'
@@ -190,7 +190,7 @@ const BannerThree = () => {
         </div>
       </div>
       <div className='shape-lg'>
-      <Image width={200} height={350}
+        <Image width={200} height={350}
           src='/assets/images/banner/banner-three-bg.png'
           alt='Image_inner'
           data-aos='zoom-in'
@@ -198,7 +198,7 @@ const BannerThree = () => {
         />
       </div>
       <div className='sprade-shape'>
-      <Image width={200} height={350}
+        <Image width={200} height={350}
           src='/assets/images/sprade-base.png'
           alt='Image_inner'
           className='base-img'
@@ -207,7 +207,7 @@ const BannerThree = () => {
         />
       </div>
       <div className='parasuit'>
-      <Image width={200} height={350} src='/assets/images/parasuit.png' alt='Image_inner' />
+        <Image width={200} height={350} src='/assets/images/parasuit.png' alt='Image_inner' />
       </div>
     </section>
   );

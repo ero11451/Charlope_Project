@@ -4,7 +4,7 @@ import { Cause } from "@/components/Admin/CausesList";
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import CauseInner from "@/components/CauseInner";
 import FooterOne from "@/components/FooterOne";
-import HeaderTwo from "@/components/HeaderTwo";
+import Header from "@/components/Header";
 import Preloader from "@/components/Preloader";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
@@ -30,7 +30,7 @@ export default function Page()  {
         <CustomCursor />
 
         {/* HeaderOne */}
-        <HeaderTwo />
+        <Header />
 
         {/* BreadcrumbOne */}
         <BreadcrumbOne title='Our Causes' />

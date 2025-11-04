@@ -57,16 +57,15 @@ const DifferenceTwo = () => {
                 <div className='difference-two__content'>
                   <span className='sub-title'>
                     <i className='icon-donation' />
-                    Start donating poor people
+                   ABOUT US
                   </span>
                   <h2 className='title-animation_inner'>
-                    Donate <span>Support</span> to Make Difference way
+                  Who We <span>   Are    </span>
                   </h2>
                   <p>
 
-                    CHARLOPE GLOBAL CHARITY FOUNDATION
-                    Offering Hope through Education, Health, and Mentorship
-                    Empowering indigent children and women across Nigeria with access to education, healthcare
+                  Charlope Global Charity Foundation (CGCF) is a non-profit, non-governmental organization established to improve lives through education, healthcare, empowerment, and humanitarian relief.
+                  We are committed to showing love in action by meeting real human needs with genuine compassion.
                   </p>
 
                   <div className='difference-two__inner cta'>
@@ -111,7 +110,7 @@ const DifferenceTwo = () => {
                             >
                               <ul>
                                 <li>
-                                  To offer financial support, mentorship, and healthcare assistance to indigent children and women in Nigeria.
+                                To alleviate poverty, promote education, support healthcare, and empower individuals to become agents of positive change.
                                 </li>
                               </ul>
                             </div>
@@ -123,7 +122,7 @@ const DifferenceTwo = () => {
                             >
                               <ul>
                                 <li>
-                                  A Nigeria where every child learns and every woman lives with dignity and hope.
+                                To be a global beacon of hope and empowerment for the less privileged, restoring lives and transforming communities through acts of love.
                                 </li>
                               </ul>
                             </div>
@@ -135,8 +134,7 @@ const DifferenceTwo = () => {
                             >
                               <ul>
                                 <li>
-                                  Compassion • Integrity • Accountability • Empowerment • Service.
-
+                                  Compassion • Integrity • Empowerment • Community • Sustainability.
                                 </li>
                               </ul>
                             </div>
@@ -144,101 +142,8 @@ const DifferenceTwo = () => {
                         </div>
                       </div>
 
-                      {/* PROGRESS */}
-                      {/* <div className='difference-two__progress'>
-                        <div className='difference-progress-single'>
-                          <div
-                            className='progress-bar-single'
-                            data-percent='75%'
-                          >
-                            <div className='circular-progress'>
-                              <div className='percent-value'>55%</div>
-                              <svg
-                                className='progress-circle'
-                                viewBox='0 0 36 36'
-                              >
-                                <path
-                                  className='circle-bg'
-                                  d='M18 2.0845
-                         a 15.9155 15.9155 0 0 1 0 31.831
-                         a 15.9155 15.9155 0 0 1 0 -31.831'
-                                />
-                                <path
-                                  style={{ strokeDasharray: 55 }}
-                                  className='circle-progress'
-                                  d='M18 2.0845
-                         a 15.9155 15.9155 0 0 1 0 31.831
-                         a 15.9155 15.9155 0 0 1 0 -31.831'
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                          <div className='content'>
-                            <p>
-                              Treatment <br />
-                              Helping
-                            </p>
-                          </div>
-                        </div>
-                        <div className='difference-progress-single'>
-                          <div
-                            className='progress-bar-single'
-                            data-percent='92%'
-                          >
-                            <div className='circular-progress'>
-                              <div className='percent-value'>85%</div>
-                              <svg
-                                className='progress-circle'
-                                viewBox='0 0 36 36'
-                              >
-                                <path
-                                  className='circle-bg'
-                                  d='M18 2.0845
-                         a 15.9155 15.9155 0 0 1 0 31.831
-                         a 15.9155 15.9155 0 0 1 0 -31.831'
-                                />
-                                <path
-                                  style={{ strokeDasharray: 60 }}
-                                  className='circle-progress'
-                                  d='M18 2.0845
-                         a 15.9155 15.9155 0 0 1 0 31.831
-                         a 15.9155 15.9155 0 0 1 0 -31.831'
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                          <div className='content'>
-                            <p>
-                              Highest <br />
-                              Fund Raised
-                            </p>
-                          </div>
-                        </div>
-                      </div> */}
                     </div>
 
-                    {/* CARD */}
-                    {/* <div className='difference-two__card'>
-                      <div className='card-group'>
-                        <div className='thumb'>
-                          <i className='icon-donation-card' />
-                        </div>
-                        <div className='content'>
-                          <h6>Donate Now</h6>
-                          <p>$40,456</p>
-                        </div>
-                      </div>
-                      <hr />
-                      <div className='card-group card-group-alt'>
-                        <div className='thumb'>
-                          <i className='icon-fund' />
-                        </div>
-                        <div className='content'>
-                          <h6>Total Fundraised</h6>
-                          <p>$1,540,456</p>
-                        </div>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>

@@ -28,7 +28,7 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
           </div>
         </div>
         <div className='row gutter-30'>
-          {causes.map((c: Cause<string>) => <div key={c.id} className='col-12 col-md-6 col-xl-4 col-xxl-3'>
+          {causes.map((c: Cause<string>) => <div key={c.id} className='col-12 col-md-6 col-xl-4 col-xxl-4'>
             <div
               className='cause__slider-inner'
               data-aos='fade-up'

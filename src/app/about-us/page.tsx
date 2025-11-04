@@ -1,4 +1,4 @@
-import HeaderTwo from "@/components/HeaderTwo";
+import Header from "@/components/Header";
 import Preloader from "@/components/Preloader";
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import CustomCursor from "@/helper/CustomCursor";
@@ -23,7 +23,7 @@ const page = () => {
         <CustomCursor />
 
         {/* HeaderOne */}
-        <HeaderTwo />
+        <Header />
 
         {/* BreadcrumbOne */}
         <BreadcrumbOne title='About Us' />
@@ -32,7 +32,7 @@ const page = () => {
         <DifferenceTwo />
 
         {/* FaqOne */}
-        <FaqOne />
+        {/* <FaqOne /> */}
 
         {/* FooterOne */}
         <FooterOne />

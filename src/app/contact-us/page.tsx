@@ -3,7 +3,7 @@
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import ContactUsInner from "@/components/ContactUsInner";
 import FooterOne from "@/components/FooterOne";
-import HeaderTwo from "@/components/HeaderTwo";
+import Header from "@/components/Header";
 import Preloader from "@/components/Preloader";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
@@ -21,7 +21,7 @@ const ContactUs = () => {
         <CustomCursor />
 
         {/* HeaderOne */}
-        <HeaderTwo />
+        <Header />
 
         {/* BreadcrumbOne */}
         <BreadcrumbOne title='Contact Us' />

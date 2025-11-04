@@ -86,11 +86,10 @@ const DifferenceOne = () => {
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>Child Education</Link>
+                              <Link href='/cause-details'>Education Support</Link>
                             </h5>
                             <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
+                               We sponsor school fees, provide learning materials, and mentor children to help them break the cycle of poverty through education.
                             </p>
                           </div>
                         </div>
@@ -110,11 +109,10 @@ const DifferenceOne = () => {
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>Healthy Food</Link>
+                              <Link href='/cause-details'>Women & Youth Empowerment</Link>
                             </h5>
                             <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
+                               We equip women and young people with vocational skills, small business grants, and mentorship to foster self-reliance.
                             </p>
                           </div>
                         </div>
@@ -134,11 +132,10 @@ const DifferenceOne = () => {
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>Medical Care</Link>
+                              <Link href='/cause-details'>Healthcare Outreach</Link>
                             </h5>
                             <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
+                            Through medical outreaches and health education, we bring free healthcare services to those who need it most.
                             </p>
                           </div>
                         </div>
@@ -158,11 +155,10 @@ const DifferenceOne = () => {
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>Child Education</Link>
+                              <Link href='/cause-details'>Food & Welfare Relief</Link>
                             </h5>
                             <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
+                                We distribute food, clothing, and essentials to vulnerable families, widows, and the homeless.
                             </p>
                           </div>
                         </div>
@@ -182,11 +178,10 @@ const DifferenceOne = () => {
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>Healthy Food</Link>
+                              <Link href='/cause-details'>Community Development</Link>
                             </h5>
                             <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
+                            We undertake clean water projects, sanitation campaigns, and rural development initiatives to promote sustainable growth.
                             </p>
                           </div>
                         </div>

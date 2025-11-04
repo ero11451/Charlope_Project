@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-const HeaderTwo = () => {
+const Header = () => {
   const pathname = usePathname();
   const [mobileMenu, setMobileMenu] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -248,4 +248,4 @@ const HeaderTwo = () => {
   );
 };
 
-export default HeaderTwo;
+export default Header;

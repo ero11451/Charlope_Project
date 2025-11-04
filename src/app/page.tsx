@@ -4,11 +4,11 @@ import CustomCursor from "@/helper/CustomCursor";
 import TestimonialTwo from "@/components/TestimonialTwo";
 import DifferenceOne from "@/components/DifferenceOne";
 import FooterOne from "@/components/FooterOne";
-import HeaderTwo from "@/components/HeaderTwo";
+import Header from "@/components/Header";
 import Preloader from "@/components/Preloader";
 import CommitTwo from "@/components/CommitTwo";
 import CommunityTwo from "@/components/CommunityTwo";
-import BannerThree from "@/components/BannerThree";
+import BannerOne from "@/components/BannerOne";
 // import CommunityThree from "@/components/CommunityThree";
 
 export const metadata = {
@@ -27,10 +27,10 @@ const page = () => {
         <CustomCursor />
 
         {/* HeaderOne */}
-        <HeaderTwo />
+        <Header />
 
         {/* BannerOne */}
-        <BannerThree />
+        <BannerOne />
 
         {/* DifferenceOne */}
         <DifferenceOne />

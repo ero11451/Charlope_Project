@@ -18,8 +18,8 @@ const FooterOne = () => {
                     <Image
                       src="/assets/images/logo.png"
                       alt="Company Logo"
-                      width = {120}
-                      height ={100}
+                      width={120}
+                      height={100}
                       style={{
                         maxWidth: "500px",
                         minHeight: "10px",
@@ -29,7 +29,7 @@ const FooterOne = () => {
 
                   </Link>
                 </div>
-            
+
               </div>
             </div>
             <div className='col-12 col-md-6 col-xl-2 offset-xl-1'>
@@ -67,6 +67,12 @@ const FooterOne = () => {
                         Contact us
                       </Link>
                     </li>
+                    <li>
+                      <Link href='/donate-us'>
+                        <i className='fa-solid fa-arrow-right' />
+                        Donate
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -92,8 +98,9 @@ const FooterOne = () => {
 
                       <div className='footer-two__widget-content'>
                         <p>
-                          Our secure online donation platform allows you to make
+                        Our secure online donation platform allows you to make
                           contributions quickly and safely. Choose from various.
+                    
                         </p>
                         <div className='social'>
                           <Link
@@ -158,7 +165,7 @@ const FooterOne = () => {
                         target='_blank'
                       >
                         <i className='fa-solid fa-location-dot' />
-                        455 West Orchard Street Kings Mountain, NC 280867
+                        10 Dr Sydney Usiegbe Street off Ulemon Road Benin city.
                       </Link>
                     </li>
                     <li>
@@ -168,9 +175,9 @@ const FooterOne = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href='/mailto:support@example.com'>
+                      <Link href='/mailto:charlopefoundation@gmail.com'>
                         <i className='fa-regular fa-envelope' />
-                        example@email.com
+                        charlopefoundation@gmail.com
                       </Link>
                     </li>
                   </ul>
@@ -185,8 +192,9 @@ const FooterOne = () => {
               <div className='col-12 col-lg-6'>
                 <div className='footer-two__copyright-inner text-center text-lg-start'>
                   <p>
+
                     Copyright © <span id='copyrightYear' />{" "}
-                    <Link href='/'>Charlope Global Charity Foundation,</Link>. All rights reserved.
+                    <Link href='/'>2025 Charlope Global Charity Foundation</Link>. All rights reserved.
                   </p>
                 </div>
               </div>
@@ -210,20 +218,20 @@ const FooterOne = () => {
             </div>
           </div>
         </div>
-       <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
-          <Image 
-            width={100} height={100} 
+        <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
+          <Image
+            width={100} height={100}
             src='https://nextjs.charifund.wowtheme7.com/assets/images/sprade.png'
             alt='Image_inner'
             className='base-img'
           />
-        </div> 
+        </div>
         <div
           className='sprade-light'
           data-aos='zoom-in'
           data-aos-duration={1000}
         >
-          <Image width={100} height={100}  src='https://nextjs.charifund.wowtheme7.com/assets/images/sprade-light.png' alt='Image_inner' />
+          <Image width={100} height={100} src='https://nextjs.charifund.wowtheme7.com/assets/images/sprade-light.png' alt='Image_inner' />
         </div>
       </footer>
     </>

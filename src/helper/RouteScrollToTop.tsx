@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
-const HeaderTwo: React.FC = () => {
+const Header: React.FC = () => {
   const pathname = usePathname();
   const [mobileMenu, setMobileMenu] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -219,4 +219,4 @@ const HeaderTwo: React.FC = () => {
   );
 };
 
-export default HeaderTwo;
+export default Header;

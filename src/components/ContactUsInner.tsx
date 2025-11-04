@@ -80,11 +80,11 @@ const ContactUsInner = () => {
                   <div className='content'>
                     <h6>Email</h6>
                     <p>
-                      <a href='mailto:support@example.com'>example@email.com</a>
+                      <a href='mailto:charlopefoundation@gmail.com'>charlopefoundation@gmail.com</a>
                     </p>
                     <p>
-                      <a href='mailto:support@example.com'>
-                        charifund@email.com
+                      <a href='mailto:charlopefoundation@gmail.com'>
+                        charlopefoundation@gmail.com
                       </a>
                     </p>
                   </div>

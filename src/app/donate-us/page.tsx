@@ -1,7 +1,7 @@
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import DonateInner from "@/components/DonateInner";
 import FooterOne from "@/components/FooterOne";
-import HeaderTwo from "@/components/HeaderTwo";
+import Header from "@/components/Header";
 import Preloader from "@/components/Preloader";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
@@ -24,7 +24,7 @@ const page = () => {
 
 
         {/* HeaderOne */}
-        <HeaderTwo />
+        <Header />
 
         {/* BreadcrumbOne */}
         <BreadcrumbOne title='Donate Us' />
