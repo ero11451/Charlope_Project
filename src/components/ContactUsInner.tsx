@@ -1,5 +1,10 @@
-import Image from "next/image";
+"use client";
+// import Image from "next/image";
 import { useState } from "react";
+// import TabButtons from "./TabButtons";
+// import TabContent from "./TabContent";
+import MemberForm from "./MemberForm";
+import PartnerForm from "./PartnerForm";
 
 const ContactUsInner = () => {
   const [form, setForm] = useState({
@@ -20,9 +25,13 @@ const ContactUsInner = () => {
     setForm({ full_name: "", email: "", phone_number: "", message: "" });
   };
 
+
+  const [activeTab, setActiveTab] = useState("mission");
+
   return (
     <section className='contact-main volunteer'>
       <div className='container'>
+            
         <div className='row gutter-40'>
           <div className='col-12 col-xl-6'>
             <div className='contact__content'>
@@ -31,8 +40,8 @@ const ContactUsInner = () => {
                 data-aos='fade-up'
                 data-aos-duration={1000}
               >
-                <span className='sub-title'>
-                  <i className='icon-donation' /> Get In Touch
+                    <span className='sub-title'>
+                  <i className='icon-donation' /> The best way to find yourself is to lose yoursekf in the service of others
                 </span>
                 <h2 className='title-animation_inner'>Contact Us</h2>
                 <p>
@@ -81,11 +90,6 @@ const ContactUsInner = () => {
                     <h6>Email</h6>
                     <p>
                       <a href='mailto:charlopefoundation@gmail.com'>charlopefoundation@gmail.com</a>
-                    </p>
-                    <p>
-                      <a href='mailto:charlopefoundation@gmail.com'>
-                        charlopefoundation@gmail.com
-                      </a>
                     </p>
                   </div>
                 </div>
@@ -140,71 +144,75 @@ const ContactUsInner = () => {
                   </div>
                 </div>
               </div>
-              <div className='contact-main__thumb cta'>
+              {/* <div className='contact-main__thumb cta'>
                 <Image width={100} height={130} src='https://nextjs.charifund.wowtheme7.com/assets/images/contact-thumb.png' alt='Image_inner' />
-              </div>
+              </div> */}
             </div>
           </div>
           <div className='col-12 col-xl-6'>
             <div
+             style={{ padding: ' 0px', margin: "0px" , border:'none'}}
               className='contact__form volunteer__form checkout__form'
               data-aos='fade-up'
               data-aos-duration={1000}
               data-aos-delay={100}
             >
-              <div className='volunteer__form-content'>
-                <h4 className='title-animation_inner'>Fill Up The Form</h4>
-                <p>
-                  Your email address will not be published. Required fields are
-                  marked *
-                </p>
-              </div>
-              <form className="cta" onSubmit={handleSubmit}>
-                <div className="input-single">
-                  <input
-                    type="text"
-                    placeholder="Enter Name"
-                    value={form.full_name}
-                    onChange={(e) => setForm({ ...form, full_name: e.target.value })}
-                    required
-                  />
+
+              <section className='difference-two' style={{ padding: ' 0px', margin: "0px" }}>
+                <div className='difference-two__tab' >
+                  <div className='difference-two__content' style={{ padding: ' 0px', margin: "0px" }}>
+                    <div className='difference-two__inner cta' >
+                      <div className='difference-two__inner-content' style={{ padding: ' 0px', margin: "0px" }}>
+                        {/* TABS */}
+                        <div className='difference-two__tab' style={{ marginTop: '0px', margin: "0px" }}>
+                          <div className='difference-two__tab-btns'>
+                            <button
+                              className={`difference-two__tab-btn ${activeTab === "mission" ? "active" : ""
+                                }`}
+                              onClick={() => setActiveTab("mission")}
+                              aria-label='mission'
+                              title='mission'
+                            >
+                              Become a volunteer
+                            </button>
+                            <button
+                              className={`difference-two__tab-btn ${activeTab === "vision" ? "active" : ""
+                                }`}
+                              onClick={() => setActiveTab("vision")}
+                              aria-label='vision'
+                              title='vision'
+                            >
+                              Become a partner
+                            </button>
+                          </div>
+
+                          <div className='difference-two__tab-content'>
+                            {activeTab === "mission" && (
+                              <div
+                                className='difference-two__content-single'
+                                id='mission'
+                              > <MemberForm />
+                              </div>
+                            )}
+                            {activeTab === "vision" && (
+                              <div
+                                className='difference-two__content-single'
+                                id='vision'
+                              >
+                           <PartnerForm />
+                              </div>
+                            )}
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
                 </div>
-                <div className="input-single">
-                  <input
-                    type="email"
-                    placeholder="Enter Email"
-                    value={form.email}
-                    onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    required
-                  />
-                </div>
-                <div className="input-single">
-                  <input
-                    type="text"
-                    placeholder="Phone Number"
-                    value={form.phone_number}
-                    onChange={(e) => setForm({ ...form, phone_number: e.target.value })}
-                    required
-                  />
-                </div>
-                <div className="input-single alter-input">
-                  <textarea
-                    placeholder="Your Message..."
-                    value={form.message}
-                    onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  />
-                </div>
-                <div className='form-cta'>
-                  <button
-                    type='submit'
-                    aria-label='submit message'
-                    title='submit message'
-                    className='btn--primary'
-                  >
-                    Get A Quote <i className='fa-solid fa-arrow-right' />
-                  </button>
-                </div>
-              </form>
+              </section>
+
+
             </div>
           </div>
         </div>

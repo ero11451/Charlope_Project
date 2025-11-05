@@ -74,15 +74,6 @@ const DifferenceTwo = () => {
                       <div className='difference-two__tab'>
                         <div className='difference-two__tab-btns'>
                           <button
-                            className={`difference-two__tab-btn ${activeTab === "mission" ? "active" : ""
-                              }`}
-                            onClick={() => setActiveTab("mission")}
-                            aria-label='mission'
-                            title='mission'
-                          >
-                            Our Mission
-                          </button>
-                          <button
                             className={`difference-two__tab-btn ${activeTab === "vision" ? "active" : ""
                               }`}
                             onClick={() => setActiveTab("vision")}
@@ -90,6 +81,15 @@ const DifferenceTwo = () => {
                             title='vision'
                           >
                             Our Vision
+                          </button>
+                          <button
+                            className={`difference-two__tab-btn ${activeTab === "mission" ? "active" : ""
+                              }`}
+                            onClick={() => setActiveTab("mission")}
+                            aria-label='mission'
+                            title='mission'
+                          >
+                            Our Mission
                           </button>
                           <button
                             className={`difference-two__tab-btn ${activeTab === "excellence" ? "active" : ""

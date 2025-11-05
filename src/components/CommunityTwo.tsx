@@ -17,11 +17,11 @@ const CommunityTwo = () => {
                   <div className='col-12 col-md-8 col-xl-8'>
                     <div className='section__header mb-0'>
                       <span className='sub-title'>
-                        We are always open for children
+                      Mahatma Gandhi
                       </span>
-                      <h2 className='title-animation_inner mt-0 hb'>
-                        Support for eating funds for hungry people
-                      </h2>
+                      <h3 className='title-animation_inner mt-0 hb'>
+                    {` "The best way to find yourself is to lose yoursekf in the service of others"`}
+                      </h3>
                     </div>
                   </div>
                   <div className='col-12 col-md-4 col-xl-4'>

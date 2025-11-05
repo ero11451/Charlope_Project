@@ -34,13 +34,13 @@ export default function Page()  {
         <Header />
 
         {/* BreadcrumbOne */}
-        <BreadcrumbOne title='Our Causes' />
+        <BreadcrumbOne title='Our Programs' />
 
-
-        <CtaSectionOne />
 
         {/* CauseInner */}
         <CauseInner  causes={causes} />
+
+        {/* <CtaSectionOne /> */}
 
         {/* FooterOne */}
         <FooterOne />

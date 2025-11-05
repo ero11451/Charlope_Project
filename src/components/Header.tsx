@@ -126,7 +126,7 @@ const Header = () => {
                         <Link
                           href='/our-causes'
                         >
-                          Causes
+                          Our Programs
                         </Link>
                       </li>
 
@@ -134,7 +134,13 @@ const Header = () => {
                         className={`navbar__item nav-fade ${["/contact-us"].includes(pathname) ? "active" : ""
                           } `}
                       >
-                        <Link href='/contact-us'>Contact Us</Link>
+                        <Link href='/contact-us'>Contact Us & Get involved</Link>
+                      </li>
+                      <li
+                        className={`navbar__item nav-fade ${["/blog-details"].includes(pathname) ? "active" : ""
+                          } `}
+                      >
+                        <Link href='/contact-us'>News</Link>
                       </li>
                     </ul>
                   </div>
