@@ -1,32 +1,10 @@
-import Database from "better-sqlite3";
-import path from "path";
+import { Pool } from "pg";
 
-const db = new Database(path.resolve("./mydatabase.db"));
+const pool = new Pool({
+  connectionString: process.env.NETLIFY_DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false, // required for Neon
+  },
+});
 
-// Create Causes table
-db.prepare(`
-  CREATE TABLE IF NOT EXISTS Causes (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    title TEXT,
-    img TEXT,
-    description TEXT,
-    category TEXT,
-    percentage TEXT,
-    raised TEXT,
-    goal TEXT
-  )
-`).run();
-
-// Create Contacts table
-db.prepare(`
-  CREATE TABLE IF NOT EXISTS Contacts (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    full_name TEXT NOT NULL,
-    email TEXT NOT NULL,
-    phone_number TEXT NOT NULL,
-    message TEXT,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-  )
-`).run();
-
-export default db;
+export default pool;

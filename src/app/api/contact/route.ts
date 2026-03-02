@@ -1,6 +1,6 @@
 
 import { NextResponse, type NextRequest as INextRequest } from "next/server";
-import db from "../../../../lib/db";
+import db from "../../../../lib/dbeee";
 
 export async function GET() {
     const stmt = db.prepare("SELECT * FROM Contacts ORDER BY created_at DESC");

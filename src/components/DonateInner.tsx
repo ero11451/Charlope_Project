@@ -82,18 +82,18 @@ const DonateInner = () => {
                       )}
                       {activeTab === "vision" && (
                         <div
-                          className='difference-two__content-single'
+                          className='difference-two__content-single text-black'
                           id='vision'
                         >
                           <ul>
                             <li>
-                             We help companies develop powerful corporate social
+                            1029630766
                             </li>
                             <li>
-                              Helped fund 3,265 Project powerful corporate poor
+                              charlope global charity  foundation
                             </li>
                             <li>
-                            Dedicated Tech Services
+                              UBA account
                             </li>
                           </ul>
                         </div>

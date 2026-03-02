@@ -1,5 +1,5 @@
 import { NextResponse , type NextRequest as INextRequest } from "next/server";
-import db from "../../../../lib/db";
+import db from "../../../../lib/dbeee";
 
 // GET all causes
 export async function GET() {

@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import ProgressBar from "../helper/ProgressBar";
-// import Image from "next/image";
 import { Cause } from "./Admin/CausesList";
+import PaymentModel from "./payments/PaymentModel";
+import React, { useState } from "react";
 const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
-
+  const [isOpen, setIsOpen]: any = useState(false);
+  const [paymentDetails, setPaymentDetails] = useState({title:"", subtitle:""})
   return (
     <section className='cause cause-three-alt'>
       <div className='container'>
@@ -63,14 +65,21 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
                     </div>
                   </div>
                   <div className='cause__cta'>
-                    <Link
+
+                    <button onClick={() =>{ 
+                       setPaymentDetails({title:c.title , subtitle : c.description}) 
+                       setIsOpen((x: any) => !x)}} className='btn--secondary'>Donate Now</button>
+                    {/* <FlutterWavePayButton
+                      className='btn--secondary'
+                      label={" Donate Now"} /> */}
+                    {/* <Link
                       href='/donate-us'
                       aria-label='donate now'
                       title='donate now'
                       className='btn--secondary'
                     >
                       Donate Now
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -117,6 +126,8 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
       {/* <div className='spade'>
         <img src='https://nextjs.charifund.wowtheme7.com/assets/images/help/spade.png' alt='Image_inner' />
       </div> */}
+
+      <PaymentModel isOpen={isOpen} setIsOpen={setIsOpen} title={paymentDetails.title} description={paymentDetails.subtitle} />
     </section>
   );
 };

@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.scss";
 import "./globals.css";
 
-import "@fortawesome/fontawesome-free/css/all.min.css";
+// import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Inter, Hubot_Sans, Edu_VIC_WA_NT_Beginner } from "next/font/google";
 
 
@@ -64,7 +64,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       
       </head>
       <body suppressHydrationWarning>
-        <InitializeAOS />
+        {/* <InitializeAOS /> */}
         {/* <RouteScrollToTop />
         <ColorPalate /> */}
         {children}
@@ -74,6 +74,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" />
         <Script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" />
 
+<script src="https://checkout.flutterwave.com/v3.js"></script>
 
       </body>
     </html>
