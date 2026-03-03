@@ -1,19 +1,20 @@
 import React, { useEffect, useState, ChangeEvent, FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useForm } from "react-hook-form";
 
 interface PaymentModalProps {
   isOpen: boolean;
   setIsOpen: (value: boolean) => void;
-  title:string;
-  description:string
+  title: string;
+  description: string
 }
 
 interface PaymentFormData {
-  amount: number;
-  email: string;
-  name: string;
-  title:string;
-  description:string
+  amount: number | any;
+  email: string | any;
+  name: string | any;
+  title: string;
+  description: string
 }
 
 export default function PaymentModal({
@@ -25,13 +26,11 @@ export default function PaymentModal({
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const [formData, setFormData] = useState<PaymentFormData>({
-    amount:0,
-    email: "",
-    name: "",
-    title,
-    description
-  });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm();
 
   // Close on ESC key
   useEffect(() => {
@@ -50,24 +49,9 @@ export default function PaymentModal({
     };
   }, [isOpen, setIsOpen]);
 
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement>
-  ) => {
-    const { name, value } = e.target;
-
-    setFormData((prev) => ({
-      ...prev,
-      [name]: name === "amount" ? Number(value) : value,
-    }));
-  };
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setError(null);
-    setLoading(true);
-
+  const onSubmit = async (formData: any) => {
     try {
-      
+
       const response = await fetch("/api/payment", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -112,8 +96,8 @@ export default function PaymentModal({
           >
             <div className="flex justify-between items-center pb-2 ">
               <div>
-              <h5 className=" font-bold title-animation_inner text-black">{title}</h5>
-              <p>{description}</p>
+                <h5 className=" font-bold title-animation_inner text-black">{title}</h5>
+                <p>{description}</p>
 
               </div>
               {/* <button
@@ -125,16 +109,13 @@ export default function PaymentModal({
               </button> */}
             </div>
 
-            <form onSubmit={handleSubmit} className="m-10 space-y-2">
+            <form className="m-10 space-y-2">
               <div>
                 <label className="block text-sm font-medium mt-2">
                   Name
                 </label>
                 <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
+                  {...register("name", { required: "Name is required" })} type="text" id="email"
                   className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-black"
                   required
                 />
@@ -146,9 +127,14 @@ export default function PaymentModal({
                 </label>
                 <input
                   type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+
+                  {...register("email", {
+                    required: "Email is required",
+                    pattern: {
+                      value: /\S+@\S+\.\S+/,
+                      message: "Invalid email format",
+                    },
+                  })}
                   className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-black"
                   required
                 />
@@ -160,10 +146,8 @@ export default function PaymentModal({
                 </label>
                 <input
                   type="number"
-                  name="amount"
                   min={1}
-                  value={formData.amount}
-                  onChange={handleChange}
+                  {...register("amount", { required: "amount is required" })}
                   className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-black"
                   required
                 />
@@ -186,6 +170,7 @@ export default function PaymentModal({
                 </button>
 
                 <button
+                  onClick={handleSubmit(onSubmit)}
                   type="submit"
                   disabled={loading}
                   className="px-5 py-2 rounded-xl bg-black text-white transition disabled:opacity-60 disabled:cursor-not-allowed"
@@ -195,7 +180,7 @@ export default function PaymentModal({
               </div>
             </form>
 
-            
+
           </motion.div>
         </motion.div>
       )}

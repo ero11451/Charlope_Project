@@ -56,7 +56,7 @@ const TestimonialTwo = () => {
               <div className='col-12 col-lg-5 d-none d-lg-block'>
                 <div className='testimonial-two__thumb'>
                   <Image width={100} height={100}
-                    src='https://nextjs.charifund.wowtheme7.com/assets/images/testimonial-thumb.png'
+                    src='/assets/images/founder.jpeg'
                     alt='Image_inner'
                   />
                   <div className='quote-thumb'>
