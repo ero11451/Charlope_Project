@@ -4,7 +4,7 @@ import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
 export default function FlutterWavePayButton({label, className}:{label:string, className?:string}) {
   const config:any = {
     public_key: 'FLWPUBK-**************************-X',
-    tx_ref: Date.now(),
+    tx_ref: 'Date.now()',
     amount: 100,
     currency: 'NGN',
     payment_options: 'card,mobilemoney,ussd',

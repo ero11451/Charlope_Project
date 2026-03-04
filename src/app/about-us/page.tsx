@@ -37,8 +37,8 @@ const page = () => {
         {/* FaqOne */}
         {/* <FaqOne /> */}
 
-{/* Team section */}
-<Team />
+        {/* Team section */}
+        <Team />
         {/* FooterOne */}
         <FooterOne />
       </section>

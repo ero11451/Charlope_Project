@@ -20,7 +20,7 @@ const CommunityTwo = () => {
                       Mahatma Gandhi
                       </span>
                       <h3 className='title-animation_inner mt-0 hb'>
-                    {` "The best way to find yourself is to lose yoursekf in the service of others"`}
+                    {` "The best way to find yourself is to lose yourself in the service of others"`}
                       </h3>
                     </div>
                   </div>

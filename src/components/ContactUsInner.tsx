@@ -31,7 +31,7 @@ const ContactUsInner = () => {
   return (
     <section className='contact-main volunteer'>
       <div className='container'>
-            
+
         <div className='row gutter-40'>
           <div className='col-12 col-xl-6'>
             <div className='contact__content'>
@@ -40,15 +40,15 @@ const ContactUsInner = () => {
                 data-aos='fade-up'
                 data-aos-duration={1000}
               >
-                    <span className='sub-title'>
-                  <i className='icon-donation' /> The best way to find yourself is to lose yoursekf in the service of others
-                </span>
+                {/* <span className='sub-title'>
+                  <i className='icon-donation' /> The best way to find yourself is to lose yourself in the service of others
+                </span> */}
                 <h2 className='title-animation_inner'>Contact Us</h2>
-                <p>
+                {/* <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium, totam rem aperiam, eaque
                   inventore
-                </p>
+                </p> */}
               </div>
               <div className='contact-main__inner cta'>
                 <div className='contact-main__single'>
@@ -75,7 +75,7 @@ const ContactUsInner = () => {
                   <div className='content'>
                     <h6>Phone</h6>
                     <p>
-                      <a href='tel:2305-587-3407'>+1 (368) 567 89 54 </a>
+                      <a href='tel:2305-587-3407'>+2347083525680 </a>
                     </p>
                     {/* <p>
                       <a href='tel:2305-587-3407'>+236 (456) 896 22</a>
@@ -114,16 +114,16 @@ const ContactUsInner = () => {
                         <i className='fa-brands fa-facebook-f' />
                       </a>
                       <a
-                        href='https://vimeo.com/'
+                        href='https://instagram.com/charlopefoundation'
                         target='_blank'
-                        aria-label='share us on vimeo'
-                        title='vimeo'
+                        aria-label='share us on instagram'
+                        title='instagram'
                         rel='noreferrer'
                       >
-                        <i className='fa-brands fa-vimeo-v' />
+                        <i className='fa-brands fa-facebook-f' />
                       </a>
                       <a
-                        href='https://www.tiktok.com/@charlopefoundation'
+                        href='https://x.com/Charlopecharity'
                         target='_blank'
                         aria-label='share us on twitter'
                         title='twitter'
@@ -151,7 +151,7 @@ const ContactUsInner = () => {
           </div>
           <div className='col-12 col-xl-6'>
             <div
-             style={{ padding: ' 0px', margin: "0px" , border:'none'}}
+              style={{ padding: ' 0px', margin: "0px", border: 'none' }}
               className='contact__form volunteer__form checkout__form'
               data-aos='fade-up'
               data-aos-duration={1000}
@@ -199,7 +199,7 @@ const ContactUsInner = () => {
                                 className='difference-two__content-single'
                                 id='vision'
                               >
-                           <PartnerForm />
+                                <PartnerForm />
                               </div>
                             )}
                           </div>

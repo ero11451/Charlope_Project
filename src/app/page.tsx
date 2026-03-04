@@ -52,7 +52,7 @@ const page = () => {
         <CtaSectionOne />
 
         <CauseSliderTwo />
-        <BlogOne />
+        {/* <BlogOne /> */}
         {/* FooterOne */}
         <FooterOne />
       </section>
