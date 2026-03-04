@@ -6,6 +6,7 @@ import DifferenceTwo from "@/components/DifferenceTwo";
 import TestimonialTwo from "@/components/TestimonialTwo";
 import FooterOne from "@/components/FooterOne";
 import AOSWrap from "@/helper/AOSWrap";
+import Team from "@/components/Team";
 
 export const metadata = {
   title: "Charifund | Nonprofit & Fundraising Charity NEXT JS Template",
@@ -36,6 +37,8 @@ const page = () => {
         {/* FaqOne */}
         {/* <FaqOne /> */}
 
+{/* Team section */}
+<Team />
         {/* FooterOne */}
         <FooterOne />
       </section>

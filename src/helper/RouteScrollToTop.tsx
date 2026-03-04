@@ -128,7 +128,7 @@ const Header: React.FC = () => {
                         </div>
                         <div className="contact-content">
                           <p>Call Us Now</p>
-                          <a href="tel:01-793-7938">(+01)-793-7938</a>
+                          <a href="tel:+2347083525680">+2347083525680</a>
                         </div>
                       </div>
                       <Link href="/donate-us" className="btn--primary d-none d-md-flex">

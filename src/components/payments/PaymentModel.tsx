@@ -1,21 +1,11 @@
 import React, { useEffect, useState, ChangeEvent, FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
+import { PaymentModalProps } from "../../../types/IPaymentModalProps";
+import { FlutterWaveButton } from "flutterwave-react-v3";
+import { FlutterWaveResponse } from "flutterwave-react-v3/dist/types";
+import Link from "next/link";
 
-interface PaymentModalProps {
-  isOpen: boolean;
-  setIsOpen: (value: boolean) => void;
-  title: string;
-  description: string
-}
-
-interface PaymentFormData {
-  amount: number | any;
-  email: string | any;
-  name: string | any;
-  title: string;
-  description: string
-}
 
 export default function PaymentModal({
   isOpen,
@@ -169,14 +159,33 @@ export default function PaymentModal({
                   Cancel
                 </button>
 
-                <button
-                  onClick={handleSubmit(onSubmit)}
+                <FlutterWaveButton 
+                className="btn btn-primary btn-yellow-600"
+                onClose={function (): void {
+                  throw new Error("Function not implemented.");
+                    }} callback={function (response: FlutterWaveResponse): void {
+                      throw new Error("Function not implemented.");
+                    }}
+                  public_key={""} tx_ref={""} amount={0} customer={{
+                  email: "",
+                  phone_number: "",
+                  name: ""
+                }} 
+                customizations={{
+                  title: "",
+                  description: "",
+                  logo: ""
+                }} 
+                payment_options={""} >
+                  Pay with flutterwave
+                </FlutterWaveButton>
+                <Link
+                  // onClick={handleSubmit(onSubmit)}
                   type="submit"
-                  disabled={loading}
-                  className="px-5 py-2 rounded-xl bg-black text-white transition disabled:opacity-60 disabled:cursor-not-allowed"
-                >
-                  {loading ? "Processing..." : "Pay Now"}
-                </button>
+                  className="px-5 py-2 rounded-xl bg-black text-white transition disabled:opacity-60 disabled:cursor-not-allowed" 
+                  href={"/donate-us"}                >
+                  {loading ? "Processing..." : "Bank payment"}
+                </Link>
               </div>
             </form>
 
