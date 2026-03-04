@@ -153,14 +153,14 @@ export default function PaymentModal({
                 <button
                   type="button"
                   onClick={() => setIsOpen(false)}
-                  className="px-4 py-2 rounded-xl bg-gray-200 hover:bg-gray-300 transition"
+                  className="rounded-xl bg-gray-200 hover:bg-gray-300 transition"
                   disabled={loading}
                 >
                   Cancel
                 </button>
 
                 <FlutterWaveButton 
-                className="btn btn-primary btn-yellow-600"
+                className="btn btn--primary btn-yellow-600"
                 onClose={function (): void {
                   throw new Error("Function not implemented.");
                     }} callback={function (response: FlutterWaveResponse): void {

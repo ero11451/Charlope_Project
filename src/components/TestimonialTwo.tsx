@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-
-
 import { useRef } from "react";
 import Slider from "react-slick";
 
@@ -104,6 +102,7 @@ const TestimonialTwo = () => {
                       </div>
                     </Slider>
                   </div>
+                  
                   <div className='slider-navigation cta'>
                     {/* <button
                       type='button'

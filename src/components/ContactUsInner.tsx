@@ -120,7 +120,7 @@ const ContactUsInner = () => {
                         title='instagram'
                         rel='noreferrer'
                       >
-                        <i className='fa-brands fa-facebook-f' />
+                        <i className='fa-brands fa-instagram-f' />
                       </a>
                       <a
                         href='https://x.com/Charlopecharity'

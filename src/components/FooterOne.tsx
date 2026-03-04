@@ -98,13 +98,14 @@ const FooterOne = () => {
 
                       <div className='footer-two__widget-content'>
                         <p>
-                        Our secure online donation platform allows you to make
+                          Our secure online donation platform allows you to make
                           contributions quickly and safely. Choose from various.
-                    
+
                         </p>
                         <div className='social'>
+                          {/* instagram.com/charlopefoundation */}
                           <Link
-                            href='https://www.facebook.com'
+                            href='https://facebook.com/charlopeglobalfoundation'
                             target='_blank'
                             aria-label='share us on facebook'
                             title='facebook'
@@ -112,15 +113,7 @@ const FooterOne = () => {
                             <i className='fa-brands fa-facebook-f' />
                           </Link>
                           <Link
-                            href='https://vimeo.com'
-                            target='_blank'
-                            aria-label='share us on vimeo'
-                            title='vimeo'
-                          >
-                            <i className='fa-brands fa-vimeo-v' />
-                          </Link>
-                          <Link
-                            href='https://x.com'
+                            href='https://x.com/Charlopecharity'
                             target='_blank'
                             aria-label='share us on twitter'
                             title='twitter'
@@ -128,12 +121,22 @@ const FooterOne = () => {
                             <i className='fa-brands fa-twitter' />
                           </Link>
                           <Link
-                            href='https://www.linkedin.com'
+                            href='https://instagram.com/charlopefoundation'
                             target='_blank'
-                            aria-label='share us on linkedin'
-                            title='linkedin'
+                            aria-label='share us on instagram'
+                            title='instagram'
+                            rel='noreferrer'
                           >
-                            <i className='fa-brands fa-linkedin-in' />
+                            <i className='fa-brands fa-instagram-f' />
+                          </Link>
+                          <Link
+                            href='https://www.tiktok.com/@charlopefoundation'
+                            target='_blank'
+                            aria-label='share us on tiktok'
+                            title='tiktok'
+                            rel='noreferrer'
+                          >
+                            <i className='fa-brands fa-tiktok-in' />
                           </Link>
                         </div>
                       </div>
@@ -171,7 +174,7 @@ const FooterOne = () => {
                     <li>
                       <Link href='/tel:2305-587-3407'>
                         <i className='fa-solid fa-phone' />
-                        +088 (246) 642-27-10
+                        +2347083525680
                       </Link>
                     </li>
                     <li>
