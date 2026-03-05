@@ -48,23 +48,23 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${nunito.variable} ${caveat.variable} ${outfit.variable} ${inter.variable} ${hubotSans.variable} ${edu.variable}`}>
       <head>
-      <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap"
           rel="stylesheet"
         />
-       <link
+        <link
           href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
           rel="stylesheet"
-        />
+        /> */}
         <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-         rel="stylesheet" 
-         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
         />
-      
+
       </head>
       <body suppressHydrationWarning>
-        {/* <InitializeAOS /> */}
+        <InitializeAOS />
         {/* <RouteScrollToTop />
         <ColorPalate /> */}
         {children}
@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" />
         <Script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" />
 
-<script src="https://checkout.flutterwave.com/v3.js"></script>
+        {/* <script src="https://checkout.flutterwave.com/v3.js"></script> */}
 
       </body>
     </html>

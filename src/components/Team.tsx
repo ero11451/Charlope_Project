@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 
 const Team = () => {
   return (
@@ -37,7 +37,7 @@ const Team = () => {
             >
               <div className='team__single van-tilt'>
                 <div className='team__single-thumb'>
-                  <img src='/assets/images/founder.jpeg' alt='Image_inner' />
+                  <Image src='/assets/images/founder.jpeg'  width={400} height={200} alt='Image_inner' />
 
                 </div>
                 <div className='team__single-content'>
@@ -56,7 +56,7 @@ const Team = () => {
             >
               <div className='team__single van-tilt'>
                 <div className='team__single-thumb '>
-                  <img src='/assets/images/Evans_Osaigbovo_Program_officer.jpeg' alt='Image_inner' />
+                  <Image src='/assets/images/Evans_Osaigbovo_Program_officer.jpeg'  width={400} height={200} alt='Image_inner' />
                   
                 </div>
                 <div className='team__single-content'>
@@ -77,7 +77,7 @@ const Team = () => {
             >
               <div className='team__single van-tilt'>
                 <div className='team__single-thumb'>
-                  <img src='/assets/images/Israel_Adodo_Legal_adviser.jpeg' alt='Image_inner'  />
+                  <Image src='/assets/images/Israel_Adodo_Legal_adviser.jpeg' width={400} height={200} alt='Image_inner'  />
                 </div>
                 <div className='team__single-content'>
                   <h6>
@@ -106,7 +106,7 @@ const Team = () => {
         </div> */}
       </div>
       <div className='spade'>
-        <img src='https://nextjs.charifund.wowtheme7.com/assets/images/sprade-green.png' alt='Image_inner' />
+        <Image src='https://nextjs.charifund.wowtheme7.com/assets/images/sprade-green.png' fill alt='Image_inner' />
       </div>
     </section>
   );

@@ -2,14 +2,11 @@
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 import CtaSectionOne from "@/components/CtaSectionOne";
-import DifferenceOne from "@/components/DifferenceOne";
 import FooterOne from "@/components/FooterOne";
 import Header from "@/components/Header";
 import Preloader from "@/components/Preloader";
-// import CommitTwo from "@/components/CommitTwo";
 import CommunityTwo from "@/components/CommunityTwo";
 import BannerOne from "@/components/BannerOne";
-import BlogOne from "@/components/BlogOne";
 import CauseSliderTwo from "@/components/CauseSliderTwo";
 import TestimonialTwo from "@/components/TestimonialTwo";
 

@@ -6,7 +6,7 @@ import { Cause } from "./Admin/CausesList";
 import PaymentModel from "./payments/PaymentModel";
 import React, { useState } from "react";
 const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
-  const [isOpen, setIsOpen]: any = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [paymentDetails, setPaymentDetails] = useState({title:"", subtitle:""})
   return (
     <section className='cause cause-three-alt'>
@@ -68,18 +68,8 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
 
                     <button onClick={() =>{ 
                        setPaymentDetails({title:c.title , subtitle : c.description}) 
-                       setIsOpen((x: any) => !x)}} className='btn--secondary'>Donate Now</button>
-                    {/* <FlutterWavePayButton
-                      className='btn--secondary'
-                      label={" Donate Now"} /> */}
-                    {/* <Link
-                      href='/donate-us'
-                      aria-label='donate now'
-                      title='donate now'
-                      className='btn--secondary'
-                    >
-                      Donate Now
-                    </Link> */}
+                       setIsOpen((x) => !x)}} className='btn--secondary'>Donate Now</button>
+                   
                   </div>
                 </div>
               </div>
@@ -89,43 +79,9 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
 
 
         </div>
-        {/* <div className='row'>
-          <div className='col-12'>
-            <div
-              className='pagination-wrapper'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-            >
-              <ul className='pagination main-pagination'>
-                <li>
-                  <button>
-                    <i className='fa-solid fa-angles-left' />
-                  </button>
-                </li>
-                <li>
-                  <Link href='/blog-list'>1</Link>
-                </li>
-                <li>
-                  <Link href='/blog-list' className='active'>
-                    2
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/blog-list'>3</Link>
-                </li>
-                <li>
-                  <button>
-                    <i className='fa-solid fa-angles-right' />
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div> */}
+       
       </div>
-      {/* <div className='spade'>
-        <img src='https://nextjs.charifund.wowtheme7.com/assets/images/help/spade.png' alt='Image_inner' />
-      </div> */}
+   
 
       <PaymentModel isOpen={isOpen} setIsOpen={setIsOpen} title={paymentDetails.title} description={paymentDetails.subtitle} />
     </section>

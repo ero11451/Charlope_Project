@@ -7,23 +7,23 @@ import MemberForm from "./MemberForm";
 import PartnerForm from "./PartnerForm";
 
 const ContactUsInner = () => {
-  const [form, setForm] = useState({
-    full_name: "",
-    email: "",
-    phone_number: "",
-    message: "",
-  });
+  // const [form, setForm] = useState({
+  //   full_name: "",
+  //   email: "",
+  //   phone_number: "",
+  //   message: "",
+  // });
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-    await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
-    alert("Message sent!");
-    setForm({ full_name: "", email: "", phone_number: "", message: "" });
-  };
+  // const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  //   e.preventDefault();
+  //   await fetch("/api/contact", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(form),
+  //   });
+  //   alert("Message sent!");
+  //   setForm({ full_name: "", email: "", phone_number: "", message: "" });
+  // };
 
 
   const [activeTab, setActiveTab] = useState("mission");
@@ -77,9 +77,6 @@ const ContactUsInner = () => {
                     <p>
                       <a href='tel:2305-587-3407'>+2347083525680 </a>
                     </p>
-                    {/* <p>
-                      <a href='tel:2305-587-3407'>+236 (456) 896 22</a>
-                    </p> */}
                   </div>
                 </div>
                 <div className='contact-main__single'>
@@ -93,10 +90,7 @@ const ContactUsInner = () => {
                     </p>
                   </div>
                 </div>
-                {/* [10/22/25, 11:49:13 PM] Charles Rgu: instagram.com/charlopefoundation
-[10/22/25, 11:49:13 PM] Charles Rgu: https://www.tiktok.com/@charlopefoundation
-[10/22/25, 11:49:14 PM] Charles Rgu: https://facebook.com/charlopeglobalfoundation
-[10/22/25, 11:49:14 PM] Charles Rgu: https://www.tiktok.com/@charlopefoundationCharlopecharity */}
+
                 <div className='contact-main__single'>
                   <div className='thumb'>
                     <i className='fa-solid fa-share-nodes' />

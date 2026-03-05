@@ -1,28 +1,14 @@
-import React, { useEffect, useState, ChangeEvent, FormEvent } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { useForm } from "react-hook-form";
-import { PaymentModalProps } from "../../../types/IPaymentModalProps";
-import { FlutterWaveButton } from "flutterwave-react-v3";
-import { FlutterWaveResponse } from "flutterwave-react-v3/dist/types";
-import Link from "next/link";
-
+import { useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { PaymentModalProps } from "@/models/payment.model";
+import PaymentForm from "./PaymentForm";
 
 export default function PaymentModal({
   isOpen,
   setIsOpen,
   title,
-  description
+  description,
 }: PaymentModalProps) {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm();
-
-  // Close on ESC key
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") setIsOpen(false);
@@ -39,33 +25,6 @@ export default function PaymentModal({
     };
   }, [isOpen, setIsOpen]);
 
-  const onSubmit = async (formData: any) => {
-    try {
-
-      const response = await fetch("/api/payment", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-
-      const data = await response.json();
-
-      if (data.status === "success") {
-        window.location.href = data.data.link;
-      } else {
-        throw new Error("Payment failed");
-      }
-    } catch (err: any) {
-      setError(err.message || "Something went wrong");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <AnimatePresence>
       {isOpen && (
@@ -77,119 +36,25 @@ export default function PaymentModal({
           onClick={() => setIsOpen(false)}
         >
           <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.9, opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            className="bg-white rounded-2xl shadow-2xl w-full max-w-lg p-6"
+            initial={{ scale: 0.9 }}
+            animate={{ scale: 1 }}
+            exit={{ scale: 0.9 }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-white rounded-2xl shadow-2xl w-full max-w-lg p-4 text-black"
           >
-            <div className="flex justify-between items-center pb-2 ">
-              <div>
-                <h5 className=" font-bold title-animation_inner text-black">{title}</h5>
+            <div className="p-4">
+              <div className="pb-4">
+                <h5 className="font-bold text-black">{title}</h5>
                 <p>{description}</p>
-
               </div>
-              {/* <button
-                onClick={() => setIsOpen(false)}
-                className="text-gray-500 hover:text-black text-lg"
-                aria-label="Close modal"
-              >
-                ✕
-              </button> */}
+
+              <PaymentForm
+                title={title}
+                description={description}
+                onSuccess={() => setIsOpen(false)}
+              />
+
             </div>
-
-            <form className="m-10 space-y-2">
-              <div>
-                <label className="block text-sm font-medium mt-2">
-                  Name
-                </label>
-                <input
-                  {...register("name", { required: "Name is required" })} type="text" id="email"
-                  className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-black"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium my-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-
-                  {...register("email", {
-                    required: "Email is required",
-                    pattern: {
-                      value: /\S+@\S+\.\S+/,
-                      message: "Invalid email format",
-                    },
-                  })}
-                  className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-black"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium mb-1">
-                  Amount
-                </label>
-                <input
-                  type="number"
-                  min={1}
-                  {...register("amount", { required: "amount is required" })}
-                  className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-black"
-                  required
-                />
-              </div>
-
-              {error && (
-                <p className="text-sm text-red-600 bg-red-50 p-2 rounded-lg my-2">
-                  {error}
-                </p>
-              )}
-
-              <div className="flex justify-end gap-3 pt-2">
-                <button
-                  type="button"
-                  onClick={() => setIsOpen(false)}
-                  className="rounded-xl bg-gray-200 hover:bg-gray-300 transition"
-                  disabled={loading}
-                >
-                  Cancel
-                </button>
-
-                <FlutterWaveButton 
-                className="btn btn--primary btn-yellow-600"
-                onClose={function (): void {
-                  throw new Error("Function not implemented.");
-                    }} callback={function (response: FlutterWaveResponse): void {
-                      throw new Error("Function not implemented.");
-                    }}
-                  public_key={""} tx_ref={""} amount={0} customer={{
-                  email: "",
-                  phone_number: "",
-                  name: ""
-                }} 
-                customizations={{
-                  title: "",
-                  description: "",
-                  logo: ""
-                }} 
-                payment_options={""} >
-                  Pay with flutterwave
-                </FlutterWaveButton>
-                <Link
-                  // onClick={handleSubmit(onSubmit)}
-                  type="submit"
-                  className="px-5 py-2 rounded-xl bg-black text-white transition disabled:opacity-60 disabled:cursor-not-allowed" 
-                  href={"/donate-us"}                >
-                  {loading ? "Processing..." : "Bank payment"}
-                </Link>
-              </div>
-            </form>
-
-
           </motion.div>
         </motion.div>
       )}
