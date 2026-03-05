@@ -89,7 +89,12 @@ const DonateInner = () => {
 
                             </div>
 
-                            <PaymentForm  title={titleSelected || ""} showBankPay ={false} description={""} onSuccess={() => console.log("")} />
+                            <PaymentForm  
+                               title={titleSelected || ""} 
+                               showBankPay ={false} 
+                               description={""} 
+                               onSuccess={() => console.log("")} 
+                            />
                           </div>
                         )}
                         {activeTab === "vision" && (

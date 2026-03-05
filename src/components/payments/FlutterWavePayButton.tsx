@@ -1,4 +1,3 @@
-import React from 'react';
 import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
 import { PaymentFormValues } from '@/models/payment.model';
 import { FlutterwaveConfig } from 'flutterwave-react-v3/dist/types';
@@ -21,7 +20,7 @@ export default function FlutterWavePayButton({
   }) {
 
   const config: FlutterwaveConfig = {
-    public_key: "YOUR_FLUTTERWAVE_PUBLIC_KEY",
+    public_key: process.env.FLUTTERWAVE_PUBLIC_KEY || "",
     tx_ref: '*********',
     amount: paymentData?.amount ?? 0,
     currency: paymentData?.currency ?? "USD",
@@ -46,15 +45,14 @@ export default function FlutterWavePayButton({
     <div >
 
       <button className={`${className}`} disabled={disabled}
-        onClick={() => {
-          handleFlutterPayment({
-            callback: (response) => {
-              console.log(response);
-              closePaymentModal() // this will close the modal programmatically
-            },
-            onClose: () => { },
-          });
-        }}
+        onClick={() => handleFlutterPayment({
+          callback: (response) => {
+            console.log(response);
+            closePaymentModal() // this will close the modal programmatically
+          },
+          onClose: () => { },
+        })
+        }
       >
         {label}
       </button>
