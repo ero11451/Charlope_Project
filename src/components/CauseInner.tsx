@@ -83,7 +83,7 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
       </div>
    
 
-      <PaymentModel isOpen={isOpen} setIsOpen={setIsOpen} title={paymentDetails.title} description={paymentDetails.subtitle} />
+      <PaymentModel isOpen={isOpen}  setIsOpen={setIsOpen} title={paymentDetails.title} description={paymentDetails.subtitle} />
     </section>
   );
 };

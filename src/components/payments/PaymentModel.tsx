@@ -49,6 +49,7 @@ export default function PaymentModal({
               </div>
 
               <PaymentForm
+              showBankPay ={true}
                 title={title}
                 description={description}
                 onSuccess={() => setIsOpen(false)}

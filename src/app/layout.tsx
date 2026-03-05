@@ -2,8 +2,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-modal-video/scss/modal-video.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./globals.scss";
-import "./globals.css";
+// import "./globals.scss";
+// import "./globals.css";
 
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Inter, Hubot_Sans, Edu_VIC_WA_NT_Beginner } from "next/font/google";
@@ -56,6 +56,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
           rel="stylesheet"
         /> */}
+
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/scss/extra.scss" />
+        <link rel="stylesheet" href="/assets/scss/globals.scss" />
+        <link rel="stylesheet" href="/assets/css/globals.css" />
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/aos.css" />
+        
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
           rel="stylesheet"

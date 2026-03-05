@@ -11,17 +11,19 @@ export interface PaymentFormProps {
     title: string;
     description: string;
     onSuccess: () => void;
+    showBankPay?: boolean
 }
 
 export default function PaymentForm({
     title,
-    description
+    description,
+    showBankPay
 }: PaymentFormProps) {
     const {
         register,
         handleSubmit,
         reset,
-        formState: { errors, isSubmitting , isValid},
+        formState: { errors, isSubmitting, isValid },
     } = useForm<PaymentFormValues>();
 
     const [paymentData, setPaymentData] =
@@ -99,19 +101,19 @@ export default function PaymentForm({
                     className="px-5 py-2 rounded-xl bg-black text-white btn"
                     disabled={isSubmitting}
                 >
-                   Restart
+                    Restart
                 </button>
-                <Link href ={"/donate-us"}className="btn btn--secondary px-3 rounded  ">
-                    Bank pay 
-                </Link>
+                {showBankPay && <Link href={"/donate-us"} className="btn btn--secondary px-3 rounded  ">
+                    Bank pay
+                </Link>}
 
                 <FlutterWavePayButton
                     className="btn px-5 py-2 rounded-xl btn--primary flex-1 py-3 "
                     label={'Pay now'}
                     paymentData={paymentData}
                     title={title}
-                    description={description} 
-                    disabled={ !isValid} />
+                    description={description}
+                    disabled={!isValid} />
 
             </div>
         </form>
