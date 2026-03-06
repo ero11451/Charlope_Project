@@ -25,7 +25,7 @@ export default function FlutterWavePayButton({
 }: FlutterWavePayButtonProps) {
 
   const config: FlutterwaveConfig = {
-    public_key: process.env.NEXT_PUBLIC_FLUTTERWAVE_PUBLIC_KEY || "",
+    public_key: process.env.NEXT_PUBLIC_FLUTTERWAVE_PUBLIC_KEY! || "",
     tx_ref: `tx-${Date.now()}`,
     amount: paymentData?.amount ?? 0,
     currency: paymentData?.currency ?? "USD",
@@ -52,7 +52,6 @@ export default function FlutterWavePayButton({
 
     if (!paymentData) return;
 
-    console.log("Payment Data testing:", paymentData);
    return handleFlutterPayment({
       callback: (response) => {
         console.log(response);
