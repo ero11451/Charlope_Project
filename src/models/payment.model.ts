@@ -13,6 +13,7 @@ export interface PaymentFormValues {
   amount: number;
   currency: string;
   phone: string;   // ✅ added
+  paymentMethod: string; // ✅ added
 }
 
 export const currencyOptions = [

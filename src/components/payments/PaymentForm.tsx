@@ -88,6 +88,19 @@ export default function PaymentForm({
                     options={currencyOptions}
                 />
 
+                 <FormSelect<PaymentFormValues>
+                    label="Payment Method"
+                    name="paymentMethod"
+                    register={register}
+                    rules={{ required: "Payment Method is required" }}
+                    errors={errors}
+                    options={[
+                        { value: "card", label: "Card Payment" },
+                        { value: "bank", label: "Bank Pay" },
+
+                    ]}
+                />
+
                 <FormInput<PaymentFormValues>
                     label="Amount"
                     name="amount"
