@@ -69,7 +69,7 @@ export default function FlutterWavePayButton({
       disabled={disabled}
       onClick={startPayment}
     >
-      {label} {process.env.NEXT_PUBLIC_FLUTTERWAVE_PUBLIC_KEY ? "" : "(Flutterwave key not set)"}
+      {label} 
     </button>
   );
 }
