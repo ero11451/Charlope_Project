@@ -1,6 +1,18 @@
-import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
-import { PaymentFormValues } from '@/models/payment.model';
-import { FlutterwaveConfig } from 'flutterwave-react-v3/dist/types';
+"use client";
+
+import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
+import { FlutterwaveConfig } from "flutterwave-react-v3/dist/types";
+import { PaymentFormValues } from "@/models/payment.model";
+
+interface FlutterWavePayButtonProps {
+  label: string;
+  className?: string;
+  paymentData: PaymentFormValues | null;
+  title: string;
+  description: string;
+  disabled?: boolean;
+  onSubmit: () => void;
+}
 
 export default function FlutterWavePayButton({
   label,
@@ -8,28 +20,24 @@ export default function FlutterWavePayButton({
   paymentData,
   title,
   description,
-  disabled
-}:
-  {
-    label: string,
-    className?: string,
-    paymentData: PaymentFormValues | null,
-    title: string,
-    description: string,
-    disabled: boolean
-  }) {
+  disabled,
+  onSubmit,
+}: FlutterWavePayButtonProps) {
 
   const config: FlutterwaveConfig = {
-    public_key: process.env.FLUTTERWAVE_PUBLIC_KEY || "",
-    tx_ref: '*********',
+    public_key: process.env.NEXT_PUBLIC_FLUTTERWAVE_PUBLIC_KEY || "",
+    tx_ref: `tx-${Date.now()}`,
     amount: paymentData?.amount ?? 0,
     currency: paymentData?.currency ?? "USD",
-    payment_options: "card, mobilemoney, ussd",
+
+    payment_options: "card,mobilemoney,ussd",
+
     customer: {
       email: paymentData?.email ?? "",
       phone_number: paymentData?.phone ?? "",
       name: paymentData?.name ?? "",
     },
+
     customizations: {
       title,
       description,
@@ -37,25 +45,31 @@ export default function FlutterWavePayButton({
     },
   };
 
-
   const handleFlutterPayment = useFlutterwave(config);
 
+  const startPayment = () => {
+    onSubmit();
+
+    if (!paymentData) return;
+
+    console.log("Payment Data testing:", paymentData);
+   return handleFlutterPayment({
+      callback: (response) => {
+        console.log(response);
+        closePaymentModal();
+      },
+      onClose: () => {},
+    });
+  };
 
   return (
-    <div >
-
-      <button className={`${className}`} disabled={disabled}
-        onClick={() => handleFlutterPayment({
-          callback: (response) => {
-            console.log(response);
-            closePaymentModal() // this will close the modal programmatically
-          },
-          onClose: () => { },
-        })
-        }
-      >
-        {label}
-      </button>
-    </div>
+    <button
+      type="button"
+      className={className}
+      disabled={disabled}
+      onClick={startPayment}
+    >
+      {label} {process.env.NEXT_PUBLIC_FLUTTERWAVE_PUBLIC_KEY ? "" : "(Flutterwave key not set)"}
+    </button>
   );
 }

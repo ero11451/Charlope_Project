@@ -6,37 +6,40 @@ import { PaymentFormValues, currencyOptions } from "@/models/payment.model";
 import FlutterWavePayButton from "./FlutterWavePayButton";
 import Link from "next/link";
 
-
 export interface PaymentFormProps {
     title: string;
     description: string;
     onSuccess: () => void;
-    showBankPay?: boolean
+    showBankPay?: boolean;
 }
 
 export default function PaymentForm({
     title,
     description,
-    showBankPay
+    showBankPay,
+    onSuccess,
 }: PaymentFormProps) {
+
     const {
         register,
         handleSubmit,
         reset,
         formState: { errors, isSubmitting, isValid },
-    } = useForm<PaymentFormValues>();
+    } = useForm<PaymentFormValues>({
+        mode: "onChange",
+    });
 
-    const [paymentData, setPaymentData] =
-        useState<PaymentFormValues | null>(null);
+    const [paymentData, setPaymentData] = useState<PaymentFormValues | null>(null);
 
     const onSubmit = (data: PaymentFormValues) => {
         setPaymentData(data);
     };
 
-
-
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+        <form
+            className="space-y-4"
+        >
+
             <FormInput<PaymentFormValues>
                 label="Name"
                 name="name"
@@ -58,6 +61,7 @@ export default function PaymentForm({
                 }}
                 errors={errors}
             />
+
             <FormInput<PaymentFormValues>
                 label="Phone Number"
                 name="phone"
@@ -74,6 +78,7 @@ export default function PaymentForm({
             />
 
             <div className="flex gap-2">
+
                 <FormSelect<PaymentFormValues>
                     label="Currency"
                     name="currency"
@@ -92,28 +97,38 @@ export default function PaymentForm({
                     rules={{ required: "Amount is required" }}
                     errors={errors}
                 />
+
             </div>
 
             <div className="flex justify-end gap-3 pt-4">
+
                 <button
-                    type="submit"
+                    type="button"
                     onClick={() => reset()}
                     className="px-5 py-2 rounded-xl bg-black text-white btn"
                     disabled={isSubmitting}
                 >
                     Restart
                 </button>
-                {showBankPay && <Link href={"/donate-us"} className="btn btn--secondary px-3 rounded  ">
-                    Bank pay
-                </Link>}
+
+                {showBankPay && (
+                    <Link
+                        href="/donate-us"
+                        className="btn btn--secondary px-3 rounded"
+                    >
+                        Bank pay
+                    </Link>
+                )}
 
                 <FlutterWavePayButton
-                    className="btn px-5 py-2 rounded-xl btn--primary flex-1 py-3 "
-                    label={'Pay now'}
+                    className="btn px-5 py-2 rounded-xl btn--primary flex-1 py-3"
+                    label="Pay now"
                     paymentData={paymentData}
                     title={title}
                     description={description}
-                    disabled={!isValid} />
+                    disabled={!isValid || isSubmitting}
+                    onSubmit={handleSubmit(onSubmit)}
+                />
 
             </div>
         </form>
