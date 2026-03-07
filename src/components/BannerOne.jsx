@@ -34,20 +34,20 @@ const BannerOne = () => {
                 <div className='container'>
                   <div className='row'>
                     <div className='col-12 col-md-9 col-lg-7 col-xxl-6'>
-                      <div className='banner-two__slider-content'>
+                      <div className=''>
                         <span className='sub-title'>
                           <i className='icon-donation' />
                           Start donating
                         </span>
-                        <h1>
-                          Bringing Hope.  <br /> Empowering Lives.
+                        <h1 className="text-white mb-4">
+                          Bringing Hope. Empowering Lives. <br /> 
                           <span className='bottom-line'>Transforming Communities.</span>
                         </h1>
                         <p className="text-white">
-                          {`At Charlope Global Charity Foundation (CGCF), 
+                          At Charlope Global Charity Foundation (CGCF), 
                           we are driven by compassion to uplift the poor,
                           empower the vulnerable, 
-                          and bring lasting change to communities in need.`}
+                          and bring lasting change to communities in need.
                         </p>
                         <div className='banner__content-cta cta'>
                           <Link
@@ -75,108 +75,8 @@ const BannerOne = () => {
                 </div>
               </div>
             </div>
-            <div className='swiper-slide'>
-              <div className='banner-two__slider-single'>
-                <div
-                  className='banner-two__slider-bg'
-                  style={{
-                    backgroundImage:
-                      "url(https://nextjs.charifund.wowtheme7.com/assets/images/banner/banner-one-bg.png)",
-                  }}
-                ></div>
-                <div className='container'>
-                  <div className='row'>
-                    <div className='col-12 col-md-9  col-lg-7 col-xxl-6'>
-                      <div className='banner-two__slider-content'>
-                        <span className='sub-title'>
-                          <i className='icon-donation' />
-                          Start donating
-                        </span>
-                        <h1>
-                          Bringing Hope.  <br />Empowering Lives. Transforming Communities.
-                          {/* To Those <span className='bottom-line'>peoples</span>
-                          Who Need It. */}
-                        </h1>
-                        <p className="text-white">
-                          At Charlope Global Charity Foundation (CGCF), we are driven by compassion to uplift the poor, empower the vulnerable, and bring lasting change to communities in need.
-                        </p>
-                        <div className='banner__content-cta cta'>
-                          <Link
-                            href='/our-causes'
-                            aria-label='about us'
-                            title='about us'
-                            className='btn--tertiary'
-                          >
-                            Become a Volunteer{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
-                          <Link
-                            href='/donate-us'
-                            aria-label='donate us'
-                            title='donate us'
-                            className='btn--primary'
-                          >
-                            Donate Now{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='swiper-slide'>
-              <div className='banner-two__slider-single'>
-                <div
-                  className='banner-two__slider-bg'
-                  style={{
-                    backgroundImage:
-                      "url(https://nextjs.charifund.wowtheme7.com/assets/images/banner/banner-two-bg.png)",
-                  }}
-                ></div>
-                <div className='container'>
-                  <div className='row'>
-                    <div className='col-12 col-md-9 col-lg-7 col-xxl-6'>
-                      <div className='banner-two__slider-content'>
-                        <span className='sub-title'>
-                          <i className='icon-donation' />
-                          {/* Start donating poor people */}
-                        </span>
-                        <h1>
-                          Bringing Hope.  <br />Empowering Lives. Transforming Communities.
-                          {/* To Those <span className='bottom-line'>peoples</span>
-                          Who Need It. */}
-                        </h1>
-                        <p>
-                          At Charlope Global Charity Foundation (CGCF), we are driven by compassion to uplift the poor, empower the vulnerable, and bring lasting change to communities in need.
-                        </p>
-                        <div className='banner__content-cta cta'>
-                          <Link
-                            href='/our-causes'
-                            aria-label='about us'
-                            title='about us'
-                            className='btn--tertiary'
-                          >
-                            Become a Volunteer{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
-                          <Link
-                            href='/donate-us'
-                            aria-label='donate us'
-                            title='donate us'
-                            className='btn--primary'
-                          >
-                            Donate Now{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+         
+          
             <div className='swiper-slide'>
               <div className='banner-two__slider-single'>
                 <div
@@ -189,13 +89,13 @@ const BannerOne = () => {
                 <div className='container'>
                   <div className='row'>
                     <div className='col-12 col-md-9 col-lg-7 col-xxl-6'>
-                      <div className='banner-two__slider-content'>
-                        <span className='sub-title'>
+                      <div className=''>
+                        <span className='sub-title text-white'>
                           <i className='icon-donation' />
                           Start donating
                         </span>
-                        <h1>
-                          Bringing Hope.  <br />Empowering Lives. Transforming Communities.
+                        <h1 className="text-white">
+                          Bringing Hope.  Empowering Lives.  <br />Transforming Communities.
                           {/* To Those <span className='bottom-line'>peoples</span>
                           Who Need It. */}
                         </h1>

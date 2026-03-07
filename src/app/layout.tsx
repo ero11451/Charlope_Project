@@ -64,6 +64,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="stylesheet" href="/assets/scss/globals.scss" />
         <link rel="stylesheet" href="/assets/css/globals.css" />
         <link rel="stylesheet" href="/assets/css/testimonial.css" />
+        <link rel="stylesheet" href="/assets/css/banner.css" />
         <link rel="stylesheet" href="/assets/css/aos.css" />
         
         <link

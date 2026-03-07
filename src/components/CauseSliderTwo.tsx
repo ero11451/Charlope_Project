@@ -110,6 +110,7 @@ const CauseSliderTwo = () => {
           </div>
         </div>
       </section>
+      <br />
     </>
   );
 };

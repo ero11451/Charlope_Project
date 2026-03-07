@@ -48,7 +48,7 @@ const page = () => {
 
         <CtaSectionOne />
 
-        <CauseSliderTwo />
+        {/* <CauseSliderTwo /> */}
         {/* <BlogOne /> */}
         {/* FooterOne */}
         <FooterOne />
