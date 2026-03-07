@@ -97,7 +97,8 @@ export default function PaymentForm({
                     options={[
                         { value: "card", label: "Card Payment" },
                         { value: "bank", label: "Bank Pay" },
-
+                        { value: "mobilemoney", label: "Mobile Money" },
+                        { value: "ussd", label: "USSD" },
                     ]}
                 />
 

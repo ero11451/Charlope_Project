@@ -30,7 +30,7 @@ export default function FlutterWavePayButton({
     amount: paymentData?.amount ?? 0,
     currency: paymentData?.currency ?? "USD",
 
-    payment_options: "card,mobilemoney,ussd",
+    payment_options: paymentData?.paymentMethod || "card",
 
     customer: {
       email: paymentData?.email ?? "",
