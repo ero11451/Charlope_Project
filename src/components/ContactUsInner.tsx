@@ -57,15 +57,15 @@ const ContactUsInner = () => {
                   </div>
                   <div className='content'>
                     <h6>Location</h6>
-                    <p>
+                    
                       <a
                         href='https://maps.app.goo.gl/XkRD56V3yUNsZd5i7'
                         target='_blank'
                         rel='noreferrer'
                       >
-                        10 Dr Sydney Usiegbe Street off Ulemon Road Benin city.
-                      </a>
+                      <p className="normal-case"> {" 10 Dr Sydney Usiegbe Street off Ulemon Road Benin city. Edo State, Nigeria."} 
                     </p>
+                      </a>
                   </div>
                 </div>
                 <div className='contact-main__single'>
