@@ -105,7 +105,7 @@ const ContactUsInner = () => {
                         title='facebook'
                         rel='noreferrer'
                       >
-                        <i className='fa-brands fa-facebook-f' />
+                        <i className='fa-brands fa-facebook' />
                       </a>
                       <a
                         href='https://instagram.com/charlopefoundation'
@@ -114,7 +114,7 @@ const ContactUsInner = () => {
                         title='instagram'
                         rel='noreferrer'
                       >
-                        <i className='fa-brands fa-instagram-f' />
+                        <i className='fa-brands fa-instagram' />
                       </a>
                       <a
                         href='https://x.com/Charlopecharity'
@@ -132,7 +132,7 @@ const ContactUsInner = () => {
                         title='tiktok'
                         rel='noreferrer'
                       >
-                        <i className='fa-brands fa-tiktok-in' />
+                        <i className='fa-brands fa-tiktok' />
                       </a>
                     </div>
                   </div>

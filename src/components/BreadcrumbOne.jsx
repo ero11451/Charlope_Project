@@ -8,7 +8,7 @@ const BreadcrumbOne = ({ title }) => {
           <div className='common-banner__content text-center'>
             <span className='sub-title'>
               <i className='icon-donation' />
-              Start donating poor people
+              Start donating to help people.
             </span>
             <h2 className='title-animation_inner'>{title}</h2>
           </div>

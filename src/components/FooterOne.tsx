@@ -125,9 +125,8 @@ const FooterOne = () => {
                             target='_blank'
                             aria-label='share us on instagram'
                             title='instagram'
-                            rel='noreferrer'
                           >
-                            <i className='fa-brands fa-instagram-f' />
+                            <i className='fa-brands fa-instagram' />
                           </Link>
                           <Link
                             href='https://www.tiktok.com/@charlopefoundation'
@@ -136,7 +135,7 @@ const FooterOne = () => {
                             title='tiktok'
                             rel='noreferrer'
                           >
-                            <i className='fa-brands fa-tiktok-in' />
+                            <i className='fa-brands fa-tiktok' />
                           </Link>
                         </div>
                       </div>

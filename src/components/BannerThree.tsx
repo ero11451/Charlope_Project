@@ -28,7 +28,7 @@ const BannerThree = () => {
                   <div className='banner-three__content'>
                     <span className='sub-title'>
                       <i className='icon-donation' />
-                      Start donating poor people
+                      Start donating to help people.
                     </span>
                     <h1 className='title-animation_inner'>
                       Bringing<span className='bottom-line'>Hope</span>.
@@ -63,7 +63,7 @@ const BannerThree = () => {
                   <div className='banner-three__content'>
                     <span className='sub-title'>
                       <i className='icon-donation' />
-                      Start donating poor people
+                      Start donating to help people.
                     </span>
                     <h1 className='title-animation_inner'>
                       Bringing<span className='bottom-line'>Hope</span>.
@@ -98,7 +98,7 @@ const BannerThree = () => {
                   <div className='banner-three__content'>
                     <span className='sub-title'>
                       <i className='icon-donation' />
-                      Start donating poor people
+                      Start donating to help people.
                     </span>
                     <h1 className='title-animation_inner'>
                       Bringing<span className='bottom-line'>Hope</span>.
