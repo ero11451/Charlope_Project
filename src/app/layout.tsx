@@ -5,8 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import "./globals.scss";
 // import "./globals.css";
 
+
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Inter, Hubot_Sans, Edu_VIC_WA_NT_Beginner } from "next/font/google";
+
 
 
 import InitializeAOS from "@/helper/InitializeAOS";
@@ -61,7 +63,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="stylesheet" href="/assets/scss/extra.scss" />
         <link rel="stylesheet" href="/assets/scss/globals.scss" />
         <link rel="stylesheet" href="/assets/css/globals.css" />
-        <link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/testimonial.css" />
         <link rel="stylesheet" href="/assets/css/aos.css" />
         
         <link

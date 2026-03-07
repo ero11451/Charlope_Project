@@ -72,19 +72,19 @@ const TestimonialTwo = () => {
                     >
                       <div className='swiper-slide'>
                         <div className='testimonial-two__single'>
-                          <div className='author-info'>
+                          <div className='authorinfo'>
                             {/* <div className='author-thumb'>
                               <img
                                 src='/assets/images/author-two.png'
                                 alt='Image_inner'
                               />
                             </div> */}
-                            <div className='author-content'>
-                              <h5>Charles</h5>
+                            <div >
+                              <h3 className="">Charles</h3>
                               <p>Founder</p>
                             </div>
                           </div>
-                          <div className='testimonial-two__single-content'>
+                          <div className='testimonial-two__single-cntent'>
                             <h5>
                             At Charlope Global Charity Foundation, we believe every child deserves a chance to 
                             dream, and every woman deserves a chance to live. Our mission is to stand with the vulnerable, bridging gaps in education 
