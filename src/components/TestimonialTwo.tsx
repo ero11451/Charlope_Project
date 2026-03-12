@@ -80,8 +80,8 @@ const TestimonialTwo = () => {
                               />
                             </div> */}
                             <div >
-                              <h3 className="">Charles</h3>
-                              <p>Founder</p>
+                              <h3 className="">Charles & Hope</h3>
+                              <p>Founders</p>
                             </div>
                           </div>
                           <div className='testimonial-two__single-cntent'>
