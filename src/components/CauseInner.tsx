@@ -7,7 +7,7 @@ import PaymentModel from "./payments/PaymentModel";
 import React, { useState } from "react";
 const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [paymentDetails, setPaymentDetails] = useState({title:"", subtitle:""})
+  const [paymentDetails, setPaymentDetails] = useState({ title: "", subtitle: "" })
   return (
     <section className='cause cause-three-alt'>
       <div className='container'>
@@ -45,10 +45,10 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
                   </div>
                 </div>
                 <div className='content'>
-                  <h6>
-                    <Link href='/cause-details'>{c.title}</Link>
-                  </h6>
-                  <p>   {c.description}     </p>
+                  <Link href='/cause-details'>
+                    <h6 >{c.title} </h6>
+                  </Link>
+                  <p className="normal-text">   {c.description}     </p>
                 </div>
                 <div className='cause__slider-cta'>
                   <div className='cause__progress progress-bar-single'>
@@ -66,10 +66,11 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
                   </div>
                   <div className='cause__cta'>
 
-                    <button onClick={() =>{ 
-                       setPaymentDetails({title:c.title , subtitle : c.description}) 
-                       setIsOpen((x) => !x)}} className='btn--secondary'>Donate Now</button>
-                   
+                    <button onClick={() => {
+                      setPaymentDetails({ title: c.title, subtitle: c.description })
+                      setIsOpen((x) => !x)
+                    }} className='btn--secondary'>Donate Now</button>
+
                   </div>
                 </div>
               </div>
@@ -79,11 +80,11 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
 
 
         </div>
-       
-      </div>
-   
 
-      <PaymentModel isOpen={isOpen}  setIsOpen={setIsOpen} title={paymentDetails.title} description={paymentDetails.subtitle} />
+      </div>
+
+
+      <PaymentModel isOpen={isOpen} setIsOpen={setIsOpen} title={paymentDetails.title} description={paymentDetails.subtitle} />
     </section>
   );
 };

@@ -19,7 +19,7 @@ const PartnerForm = () => {
   return (
     <div className='volunteer__form-content'>
       {/* <h4 className='title-animation_inner'>Become a Partner</h4> */}
-      <p>We welcome collaborations! Fill in the form below to get started.</p>
+      <p className='normal-case'>We welcome collaborations! Fill in the form below to get started.</p>
 
       <form className='cta' onSubmit={handleSubmit}>
         <div className='input-single'>

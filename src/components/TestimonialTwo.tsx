@@ -63,7 +63,7 @@ const TestimonialTwo = () => {
                 </div>
               </div>
               <div className='col-12 col-lg-7 col-xl-6'>
-                <div className='testimonial-two__content'>
+                <div className='testimonial-two__content '>
                   <div className='testimonial-two__slider swiper'>
                     <Slider
                       {...settings}
@@ -85,11 +85,11 @@ const TestimonialTwo = () => {
                             </div>
                           </div>
                           <div className='testimonial-two__single-cntent'>
-                            <h5>
-                            At Charlope Global Charity Foundation, we believe every child deserves a chance to 
-                            dream, and every woman deserves a chance to live. Our mission is to stand with the vulnerable, bridging gaps in education 
-                            and healthcare across Nigeria. Through compassion, collaboration, and commitment, we are transforming lives one community at a time.
-                            </h5>
+                            <h1 className="text-black">
+                          "At Charlope Global Charity Foundation, we believe every child deserves a chance to
+                            dream, and every woman deserves a chance to live. Our mission is to stand with the vulnerable, bridging gaps in education
+                            and healthcare across Nigeria. Through compassion, collaboration, and commitment, we are transforming lives one community at a time."
+                            </h1>
                             {/* <div className='review'>
                               <i className='icon-star' />
                               <i className='icon-star' />

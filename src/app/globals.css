@@ -18,11 +18,10 @@
 @import url("/assets/css/dark-mode.css");
 @import url("/assets/css/blue-theme.css");
 @import url("/assets/css/main.css");
+
 :root {
   --base-color:#ffc107;
 }
-
-
 
 body {
   font-family: var(--font-inter), sans-serif;
@@ -44,6 +43,9 @@ blockquote {
   --background: #ffffff;
   --foreground: #171717;
 }
+
+
+
 /*
 @theme inline {
   --color-background: var(--background);
@@ -69,3 +71,5 @@ body {
 /* .auth-form-input {
   @apply border-stroke-3 bg-background-1 placeholder:text-tagline-2 placeholder:text-secondary/60 text-secondary text-tagline-1 dark:bg-background-6 dark:border-stroke-7 dark:placeholder:text-accent/60 dark:text-accent block h-[45px] w-full rounded-full border px-[18px] py-3 font-normal placeholder:font-normal focus:ring-0 focus:outline-none;
 } */
+
+

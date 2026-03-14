@@ -57,15 +57,15 @@ const DifferenceTwo = () => {
                 <div className='difference-two__content'>
                   <span className='sub-title'>
                     <i className='icon-donation' />
-                   ABOUT US
+                    ABOUT US
                   </span>
-                  <h2 className='title-animation_inner'>
-                  Who We <span>   Are    </span>
+                  <h2 className='title-animation_inner normal-text'>
+                    Who We <span>   Are    </span>
                   </h2>
-                  <p>
+                  <p className="normal-text">
 
-                  Charlope Global Charity Foundation (CGCF) is a non-profit, non-governmental organization established to improve lives through education, healthcare, empowerment, and humanitarian relief.
-                  We are committed to showing love in action by meeting real human needs with genuine compassion.
+                    Charlope Global Charity Foundation (CGCF) is a non-profit, non-governmental organization established to improve lives through education, healthcare, empowerment, and humanitarian relief.
+                    We are committed to showing love in action by meeting real human needs with genuine compassion.
                   </p>
 
                   <div className='difference-two__inner cta'>
@@ -105,14 +105,15 @@ const DifferenceTwo = () => {
                         <div className='difference-two__tab-content'>
                           {activeTab === "mission" && (
                             <div
-                              className='difference-two__content-single'
+                              className='difference-two__content single'
                               id='mission'
                             >
-                              <ul>
-                                <li>
-                                To alleviate poverty, promote education, support healthcare, and empower individuals to become agents of positive change.
-                                </li>
-                              </ul>
+
+                              <p className="normal-text">
+                                To alleviate poverty, promote education, support healthcare, and
+                                 empower individuals to become agents of positive change.
+                              </p>
+
                             </div>
                           )}
                           {activeTab === "vision" && (
@@ -120,11 +121,12 @@ const DifferenceTwo = () => {
                               className='difference-two__content-single'
                               id='vision'
                             >
-                              <ul>
-                                <li>
-                                To be a global beacon of hope and empowerment for the less privileged, restoring lives and transforming communities through acts of love.
-                                </li>
-                              </ul>
+
+                              <p className="normal-text">
+                                To be a global beacon of hope and empowerment for the less privileged, restoring 
+                                lives and transforming communities through acts of love.
+                              </p>
+
                             </div>
                           )}
                           {activeTab === "excellence" && (

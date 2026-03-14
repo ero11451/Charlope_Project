@@ -97,7 +97,7 @@ const FooterOne = () => {
                     <li>
 
                       <div className='footer-two__widget-content'>
-                        <p>
+                        <p className="normal-case">
                           Our secure online donation platform allows you to make
                           contributions quickly and safely. Choose from various.
 
@@ -165,9 +165,11 @@ const FooterOne = () => {
                       <Link
                         href='/https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8'
                         target='_blank'
+                        className="normal-case"
                       >
-                        <i className='fa-solid fa-location-dot' />
-                        10 Dr Sydney Usiegbe Street off Ulemon Road Benin city.
+                        <p 
+                        className="normal-case flex gap-2 items-center alig"><i className='fa-solid fa-location-dot' /> 
+                        10 Dr Sydney Usiegbe Street off Ulemon Road Benin city.</p>
                       </Link>
                     </li>
                     <li>
@@ -191,16 +193,16 @@ const FooterOne = () => {
         <div className='footer-two__copyright'>
           <div className='container'>
             <div className='row align-items-center gutter-12'>
-              <div className='col-12 col-lg-6'>
+              <div className='col-12 col-lg-'>
                 <div className='footer-two__copyright-inner text-center text-lg-start'>
-                  <p>
+                  <p className=" w-full">
 
                     Copyright © <span id='copyrightYear' />{" "}
-                    <Link href='/'>2025 Charlope Global Charity Foundation</Link>. All rights reserved.
+                    <Link href='/'>{new Date().getFullYear()} Charlope Global Charity Foundation</Link>. All rights reserved.
                   </p>
                 </div>
               </div>
-              <div className='col-12 col-lg-6'>
+              {/* <div className='col-12 col-lg-6'>
                 <div className='footer__bottom-left'>
                   <ul className='footer__bottom-list justify-content-center justify-content-lg-end'>
                     <li>
@@ -216,7 +218,7 @@ const FooterOne = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
