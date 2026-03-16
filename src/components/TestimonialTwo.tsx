@@ -79,10 +79,10 @@ const TestimonialTwo = () => {
                                 alt='Image_inner'
                               />
                             </div> */}
-                            <div >
+                            {/* <div >
                               <h3 className="">Charles & Hope</h3>
                               <p>Founders</p>
-                            </div>
+                            </div> */}
                           </div>
                           <div className='testimonial-two__single-cntent'>
                             <h1 className="text-black">

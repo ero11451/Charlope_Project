@@ -24,7 +24,8 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
               </span>
               <h2 className='title-animation_inner'>
                 Be the reason of someone
-                <span>smiles</span> Causes
+                <span className="mx-2">smiles</span>
+                causes
               </h2>
             </div>
           </div>
