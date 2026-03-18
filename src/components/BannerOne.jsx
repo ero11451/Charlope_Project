@@ -51,7 +51,7 @@ const BannerOne = () => {
                         </p>
                         <div className='banner__content-cta cta'>
                           <Link
-                            href='/our-causes'
+                            href='/contact-us'
                             aria-label='about us'
                             title='about us'
                             className='btn--tertiary'

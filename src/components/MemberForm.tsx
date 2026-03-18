@@ -23,7 +23,7 @@ const MemberForm = () => {
   return (
     <div className='volunteer__form-content'>
       {/* <h4 className='title-animation_inner'>Fill Up The Form</h4> */}
-      <p className='normal-case'>Your email address will not be published. Required fields are marked *</p>
+      <p className='normal-case'>Your email address will not be published. <br /> Required fields are marked *</p>
 
       <form className='cta' onSubmit={handleSubmit}>
         <div className='input-single'>

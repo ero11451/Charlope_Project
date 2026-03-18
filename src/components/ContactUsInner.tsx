@@ -167,7 +167,7 @@ const ContactUsInner = () => {
                               aria-label='mission'
                               title='mission'
                             >
-                              Become a volunteer
+                              Become a Volunteer
                             </button>
                             <button
                               className={`difference-two__tab-btn ${activeTab === "vision" ? "active" : ""
@@ -176,7 +176,7 @@ const ContactUsInner = () => {
                               aria-label='vision'
                               title='vision'
                             >
-                              Become a partner
+                              Become a Partner
                             </button>
                           </div>
 
