@@ -23,7 +23,7 @@ const CauseInner = ({ causes }: { causes: Cause<string>[] }) => {
                 Start donating to help people.
               </span>
               <h2 className='title-animation_inner'>
-                Be the reason of someone's 
+                Be the reason of someone"s
                 <span className="mx-2">smiles</span>
                 causes
               </h2>
