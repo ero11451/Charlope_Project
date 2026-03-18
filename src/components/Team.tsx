@@ -99,7 +99,7 @@ const Team = () => {
                   <Image src='/assets/images/Samue_Adewo_Human_Resources_Officer.jpeg' width={400} height={200} alt='Image_inner'  />
                 </div>
                 <div className='team__single-content'>
-                  <h6>Samue Adewo
+                  <h6>Samuel Adewo
                   </h6>
                   <p>
  Human Resources Officer</p>
