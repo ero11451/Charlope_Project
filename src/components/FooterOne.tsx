@@ -85,7 +85,7 @@ const FooterOne = () => {
                 data-aos-delay={400}
               >
                 <div className='footer-two__widget-intro'>
-                  <h5>Our Social media</h5>
+                  <h5>Our social media</h5>
                   <div className='line'>
                     <span className='large-line' />
                     <span className='small-line' />
@@ -98,8 +98,7 @@ const FooterOne = () => {
 
                       <div className='footer-two__widget-content'>
                         <p className="normal-case">
-                          Our secure online donation platform allows you to make
-                          contributions quickly and safely. Choose from various.
+                   Connect with us on all our Social Media platforms to get on-the-go-updates about us and our activities.
 
                         </p>
                         <div className='social'>

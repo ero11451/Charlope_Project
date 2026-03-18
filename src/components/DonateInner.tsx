@@ -32,8 +32,13 @@ const DonateInner = () => {
               <div className='difference-two__content'>
 
                 <h2 className='title-animation_inner'>
-                  Donate <span>Support</span> to Make Difference way
+                Make a donation today and help <span>support</span> our work. 
                 </h2>
+                  <p className="normal-case">
+                          Our secure online donation platform allows you to make
+                          contributions quickly and safely. Choose from various methods.
+
+                        </p>
 
                 <div className='difference-two__inner cta'>
                   <div className='difference-two__inner-content'>
@@ -48,7 +53,7 @@ const DonateInner = () => {
                           aria-label='mission'
                           title='mission'
                         >
-                          international
+                          International
                         </button>
                         <button
                           className={`difference-two__tab-btn ${activeTab === "vision" ? "active" : ""
@@ -107,10 +112,10 @@ const DonateInner = () => {
                                 1029630766
                               </li>
                               <li>
-                                charlope global charity  foundation
+                                Charlope Global Charity  Foundation
                               </li>
                               <li>
-                                UBA account
+                                UBA Account
                               </li>
                             </ul>
                           </div>

@@ -41,7 +41,7 @@ const Team = () => {
                 </div>
                 <div className='team__single-content'>
                   <h6>
-                    Imariabe Charles omoregbee </h6>
+                    Imariabe and Hope omoregbee </h6>
                   <p>Founder</p>
                 </div>
               </div>

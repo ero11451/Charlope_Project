@@ -28,7 +28,7 @@ const CtaSectionOne = () => {
                   </div>
                   <div className='cta-s'>
                     <Link
-                      href='/become-volunteer'
+                      href='/contact-us'
                       aria-label='become a volunteer'
                       title='become a volunteer'
                       className='btn--tertiary'
