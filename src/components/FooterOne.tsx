@@ -167,8 +167,8 @@ const FooterOne = () => {
                         className="normal-case"
                       >
                         <p 
-                        className="normal-case flex gap-2 items-center alig"><i className='fa-solid fa-location-dot' /> 
-                        10 Dr Sydney Usiegbe Street off Ulemon Road Benin city.</p>
+                        className="normal-case flex gap-2 items-center"><i className='fa-solid fa-location-dot' />
+                        10 Dr Sydney Usiegbe Street off Ulemon Road, Benin City.</p>
                       </Link>
                     </li>
                     <li>

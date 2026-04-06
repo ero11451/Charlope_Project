@@ -43,7 +43,7 @@ const CommunityThree = () => {
                   Join the Many Who Already Support Our Mission
                 </p>
               </div>
-              <div className='commmit-tab-single mt-40'>
+              <div className='commit-tab-single mt-40'>
                 <div className='commit-tab-inner'>
                   <div className='thumb'>
                     <i className='icon-donation' />

@@ -63,8 +63,7 @@ const ContactUsInner = () => {
                         target='_blank'
                         rel='noreferrer'
                       >
-                      <p className="normal-case"> {" 10 Dr Sydney Usiegbe Street off Ulemon Road Benin city. Edo State, Nigeria."} 
-                    </p>
+                      <p className="normal-case">10 Dr Sydney Usiegbe Street off Ulemon Road, Benin City, Edo State, Nigeria.</p>
                       </a>
                   </div>
                 </div>

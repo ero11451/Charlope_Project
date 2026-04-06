@@ -228,18 +228,10 @@ const Header = () => {
             <Link
               href='https://www.tiktok.com/@charlopefoundation'
               target='_blank'
-              aria-label='share us on twitter'
-              title='twitter'
+              aria-label='share us on tiktok'
+              title='tiktok'
             >
-              <i className='fa-brands fa-twitter' />
-            </Link>
-            <Link
-              href='https://www.tiktok.com/@charlopefoundation'
-              target='_blank'
-              aria-label='share us on linkedin'
-              title='linkedin'
-            >
-              <i className='fa-brands fa-linkedin-in' />
+              <i className='fa-brands fa-tiktok' />
             </Link>
           </div>
         </nav>

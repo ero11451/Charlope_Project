@@ -27,20 +27,19 @@ const BlogDetailsInner = () => {
               </div>
               <div className='cm-group cta'>
                 <h3 className='title-animation_inner'>
-                  Give african childrens a good education
+                  Give African children a good education
                 </h3>
                 <p>
-                  Charity and Donation is a categorys that involves giving
-                  financial category that involves giving financial or material
-                  support various causes organizations. It allows individuals
-                  towards the a addressing social category that involves giving
-                  financial or material support various causes of organizations.
-                  It allows individuals towards addressing social
+                  Charity and donation is a category that involves giving
+                  financial or material support to various causes and
+                  organisations. It allows individuals to address social
+                  challenges and make a meaningful difference in the lives of
+                  those who need it most.
                 </p>
                 <p>
-                  Charity and Donation is a categorys that involves giving
-                  financial category that involves giving financial or material
-                  support various causes organizations.
+                  Charity and donation is a category that involves giving
+                  financial or material support to various causes and
+                  organisations.
                 </p>
               </div>
               

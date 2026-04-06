@@ -41,13 +41,13 @@ const Team = () => {
                 </div>
                 <div className='team__single-content'>
                   <h6>
-                    Imariabe and Hope omoregbee </h6>
+                    Imariabe and Hope Omoregbee</h6>
                   <p>Founder</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className='col-16 col-sm-6 col-xl-4'>
+          <div className='col-12 col-sm-6 col-xl-4'>
             <div
               className='team__single-wrapper'
               data-aos='fade-up'
