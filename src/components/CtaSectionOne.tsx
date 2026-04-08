@@ -21,7 +21,7 @@ const CtaSectionOne = () => {
                     <i className='icon-spread-love' />
                   </div>
                   <div className='content'>
-                    <span>We give each child the gift of education</span>
+                    <span>We give each child the gift of education </span>
                     <h3 className='title-animation_inner'>
                       Become a Volunteer
                     </h3>
@@ -74,7 +74,7 @@ const CtaSectionOne = () => {
                     <i className='icon-spread-love' />
                   </div>
                   <div className='content'>
-                    <span>We give children the gift of education</span>
+                    <span>We give each child the gift of education</span>
                     <h3 className='title-animation_inner'>
                       Make a Donation
                     </h3>
