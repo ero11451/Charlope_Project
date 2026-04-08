@@ -64,7 +64,7 @@ const FooterOne = () => {
                     <li>
                       <Link href='/contact-us'>
                         <i className='fa-solid fa-arrow-right' />
-                        Contact us
+                        Contact Us
                       </Link>
                     </li>
                     <li>
@@ -98,7 +98,7 @@ const FooterOne = () => {
 
                       <div className='footer-two__widget-content'>
                         <p className="normal-case">
-                   Connect with us on all our Social Media platforms to get on-the-go-updates about us and our activities.
+                   Connect with us on all our Social Media platforms to get on-the-go updates about us and our activities.
 
                         </p>
                         <div className='social'>

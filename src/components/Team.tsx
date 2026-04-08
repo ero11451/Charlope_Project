@@ -62,7 +62,7 @@ const Team = () => {
                   <h6>
                     Evans Osaigbovo
                   </h6>
-                  <p>Program officer</p>
+                  <p>Program Officer</p>
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Team = () => {
                   <h6>
                     Israel Adodo
                   </h6>
-                  <p>Legal adviser</p>
+                  <p>Legal Adviser</p>
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@ const Team = () => {
             >
               <div className='team__single van-tilt'>
                 <div className='team__single-thumb'>
-                  <Image src='/assets/images/Samue_Adewo_Human_Resources_Officer.jpeg' width={400} height={200} alt='Image_inner'  />
+                  <Image src='/assets/images/Samuel_Adewo_Human_Resources_Officer.jpeg' width={400} height={200} alt='Image_inner'  />
                 </div>
                 <div className='team__single-content'>
                   <h6>Samuel Adewo

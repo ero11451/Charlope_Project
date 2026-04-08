@@ -112,7 +112,7 @@ const DonateInner = () => {
                                 1029630766
                               </li>
                               <li>
-                                Charlope Global Charity  Foundation
+                                Charlope Global Charity Foundation
                               </li>
                               <li>
                                 UBA Account
